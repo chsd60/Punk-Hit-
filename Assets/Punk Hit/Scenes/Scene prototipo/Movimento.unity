@@ -269,9 +269,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851681261}
   serializedVersion: 2
-  m_Mass: 2
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -284,7 +284,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 851681261}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 067cc5d717e9e6440a3bff7aad4aa079, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -367,8 +367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59173f0a58c5b54aac315e308e50a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementTest: 1
   rbProtagonista: {fileID: 851681262}
-  speed: 5
+  speedSlittoso: 10
+  speedScattoso: 10
 --- !u!114 &851681268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,7 +384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 851681262}
-  jumpForce: 15
+  jumpForce: 10
 --- !u!1 &1416071201
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,7 +504,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505530671}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 067cc5d717e9e6440a3bff7aad4aa079, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
