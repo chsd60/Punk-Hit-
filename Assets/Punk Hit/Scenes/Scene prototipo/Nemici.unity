@@ -413,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Momoya_Base
       objectReference: {fileID: 0}
+    - target: {fileID: 2573489679593203093, guid: 14e797a1c5c63df4a90b9749107514a5, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e797a1c5c63df4a90b9749107514a5, type: 3}
 --- !u!1001 &5289805170392718036
