@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 851681262}
   - component: {fileID: 851681267}
   - component: {fileID: 851681268}
+  - component: {fileID: 851681269}
   m_Layer: 0
   m_Name: Player Placeholder
   m_TagString: Player
@@ -385,6 +386,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 851681262}
   jumpForce: 10
+--- !u!114 &851681269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 851681261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20c281df66e5564f820e6c3d7f0a9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ondaSonora: {fileID: 583483976127380302, guid: a611b07f7aa86e04b862973a4f0bb143, type: 3}
 --- !u!1 &1416071201
 GameObject:
   m_ObjectHideFlags: 0
