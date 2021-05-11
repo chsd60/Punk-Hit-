@@ -10,7 +10,8 @@ public class CharacterMovement : MonoBehaviour {
     public Rigidbody rbProtagonista;
     
     //Da unificare quando è finito il testing
-    public float speedSlittoso;
+    public float accSlittoso;
+    public float maxSpSlittoso;
     public float speedScattoso;
     private float orientation;
 
@@ -30,7 +31,8 @@ public class CharacterMovement : MonoBehaviour {
         }
 
         if (movementTest) {
-            rbProtagonista.AddForce(transform.forward * speedSlittoso * orientation, ForceMode.Acceleration);
+            //speedScattoso = ;
+            rbProtagonista.AddForce(transform.forward * accSlittoso * orientation, ForceMode.Acceleration);
         } else {
             rbProtagonista.velocity = transform.forward * speedScattoso * orientation;
         }
