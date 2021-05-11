@@ -31,7 +31,6 @@ public class CharacterMovement : MonoBehaviour {
         }
 
         if (movementTest) {
-            //speedScattoso = ;
             rbProtagonista.AddForce(transform.forward * accSlittoso * orientation, ForceMode.Acceleration);
         } else {
             rbProtagonista.velocity = transform.forward * speedScattoso * orientation;
