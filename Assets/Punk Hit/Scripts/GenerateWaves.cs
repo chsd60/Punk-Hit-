@@ -13,8 +13,8 @@ public class GenerateWaves : MonoBehaviour {
 
     void Update() {
         if (Input.GetButtonDown("Fire1")) {
-            /**Rigidbody clone = (Rigidbody)Instantiate(soundWave, spawnPoint.position);
-            clone.velocity = spawnPoint.TransformDirection(Vector3.forward * 20);**/
+            GameObject ondaSonora = Instantiate(soundWave, transform.position, transform.rotation);
+            ondaSonora.GetComponent<Rigidbody>().AddRelativeForce(0, 0, speed);
         }
     }
 }
