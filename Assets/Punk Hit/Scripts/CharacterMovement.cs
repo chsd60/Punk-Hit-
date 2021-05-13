@@ -10,9 +10,7 @@ public class CharacterMovement : MonoBehaviour {
     public Rigidbody rbProtagonista;
     
     //Da unificare quando è finito il testing
-    public float accSlittoso;
-    public float maxSpSlittoso;
-    public float speedScattoso;
+    public float speed;
     private float orientation;
 
     void Start() {
@@ -22,18 +20,7 @@ public class CharacterMovement : MonoBehaviour {
 
     void Update() {
         orientation = Input.GetAxisRaw("Horizontal");
-
-        //Da togliere if quando è finito il testing
-        if (Input.GetKeyDown("m") && movementTest) {
-            movementTest = false;
-        } else if (Input.GetKeyDown("m") && movementTest == false) {
-            movementTest = true;
-        }
-
-        if (movementTest) {
-            rbProtagonista.AddForce(transform.forward * accSlittoso * orientation, ForceMode.Acceleration);
-        } else {
-            rbProtagonista.velocity = transform.forward * speedScattoso * orientation;
-        }
+        // rbProtagonista.AddForce(transform.forward * speed * orientation, ForceMode.IDENTIFIER);
+        
     }
 }
