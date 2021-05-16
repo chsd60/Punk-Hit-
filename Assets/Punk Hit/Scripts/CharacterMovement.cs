@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour {
 
-    //Da rimuovere quando è finito il testing
-    public bool movementTest = true;
-
     public Rigidbody rbProtagonista;
     
-    //Da unificare quando è finito il testing
     public float speed;
     private float orientation;
+    //Roba che sto provando, al momento la lascio così, probabilmente da rimuovere
+    private Vector3 speedCalc;
 
     void Start() {
         rbProtagonista = GetComponent<Rigidbody>();
@@ -20,7 +18,9 @@ public class CharacterMovement : MonoBehaviour {
 
     void Update() {
         orientation = Input.GetAxisRaw("Horizontal");
-        // rbProtagonista.AddForce(transform.forward * speed * orientation, ForceMode.IDENTIFIER);
+        //vedi riga 12
+        speedCalc = transform.forward * speed * orientation;
+        rbProtagonista.AddForce(speedCalc, ForceMode.VelocityChange);
         
     }
 }
