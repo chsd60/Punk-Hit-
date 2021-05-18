@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour {
     private float orientation;
     //Roba che sto provando, al momento la lascio così, probabilmente da rimuovere
     private Vector3 speedCalc;
+    public float speedDimezzata;
 
     private GroundCheck _check;
     void Start() {
@@ -23,7 +24,7 @@ public class CharacterMovement : MonoBehaviour {
         //vedi riga 12
 //        if (!gameObject.GetComponent<GroundCheck>().isGrounded) return;
         speedCalc = transform.right * speed * orientation;
-        if (!_check.isGrounded) speedCalc /= 3f;
+        if (!_check.isGrounded) speedCalc /= speedDimezzata;
         rbProtagonista.AddForce(speedCalc, ForceMode.Force);
         
     }
