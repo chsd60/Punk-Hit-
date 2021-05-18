@@ -13,7 +13,7 @@ public class Pickup : MonoBehaviour {
     **/
 
 
-    public bool test; //ovviamente da modificare in futuro con i vari tipi di pickup.
+    /** public bool test; //ovviamente da modificare in futuro con i vari tipi di pickup.
     public Text puntiUI; //ui del testo sullo schermo.
     public int punti; //Questa variabile va spostata nello script che agirà come sistema di punteggio.
     public int puntiRicevuti; //punti ricevuti dal singolo pickup.
@@ -25,5 +25,12 @@ public class Pickup : MonoBehaviour {
             punti = punti + puntiRicevuti;
             puntiUI.text = "Punti: " + punti;
             }
+    } **/
+    private void Update() {
+      
+    }
+
+    protected virtual void Pick() {
+
     }
 }
