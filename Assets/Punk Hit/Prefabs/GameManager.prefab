@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"punti","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"note","value":{"$content":0,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"punti","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"note","value":{"$content":0,"$type":"System.Int32"},"$version":"A"},{"name":"fans","value":{"$content":[false,false,false,false,false,false,false,false],"$type":"System.Collections.Generic.List`1[[System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"$version":"A"},{"name":"nemiciKO","value":{"$content":0,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &-7120139562783588760
 MonoBehaviour:
