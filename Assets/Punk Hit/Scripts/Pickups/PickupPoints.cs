@@ -8,7 +8,7 @@ public class PickupPoints : PickupBase
 
     protected override void Pick()
     {
-        // TODO: Assegnare i punti al game manager.
+        FindObjectOfType<VariableManager>().AddPoints(points);
         
         base.Pick();
     }
