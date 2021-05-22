@@ -396,6 +396,8 @@ GameObject:
   - component: {fileID: 5978502022269276804}
   - component: {fileID: 8014945015529922516}
   - component: {fileID: 7598289447371465481}
+  - component: {fileID: 6309005289410044363}
+  - component: {fileID: 4360405313193931294}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -500,6 +502,33 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: ca4fc9a237fa36a43861658eee705b71, type: 2}
+--- !u!114 &6309005289410044363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978502022269276806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 447730be9931dbe44a6db07c25dfd956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 0
+  timeToRespawn: 0
+--- !u!135 &4360405313193931294
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5978502022269276806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.7
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5978502022292794145
 GameObject:
   m_ObjectHideFlags: 0
