@@ -16,6 +16,8 @@ public class VariableManager : MonoBehaviour
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
     }
 
+    //Punti
+
     public int GetPoints()
     {
         return sceneVariables.declarations.Get<int>("punti");
@@ -30,6 +32,22 @@ public class VariableManager : MonoBehaviour
     {
         SetPoints(GetPoints() + points);
     }
+
+    // Note
+
+    public int GetNotes() {
+        return sceneVariables.declarations.Get<int>("note");
+    }
+
+    public void SetNotes(int notes) {
+        sceneVariables.declarations.Set("note", notes);
+    }
+
+    public void AddNotes(int notes) {
+        SetNotes(GetNotes() + notes);
+    }
+
+    //Fan
 
     public bool GetFan(int index)
     {

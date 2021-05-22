@@ -17,7 +17,7 @@ public class WaveSystem : MonoBehaviour {
             other.attachedRigidbody.AddForce(transform.forward * pushSpeed, ForceMode.Impulse);
         } else if (other.gameObject.CompareTag("Distruggibile")) {
             other.gameObject.SetActive(false);
-        }
+        } 
     }
 
     IEnumerator DeleteThis() {
