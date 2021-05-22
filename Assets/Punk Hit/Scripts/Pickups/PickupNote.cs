@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickupNote : PickupPoints
-{
-    protected override void Pick()
-    {
-        // TODO: notificare al game manager che è stata presa una nota, in modo tale che venga aggiornato il conteggio.
+public class PickupNote : PickupPoints {
+
+    public int notes = 0;
+
+    protected override void Pick() {
+        FindObjectOfType<VariableManager>().AddNotes(notes);
         base.Pick();
     }
 }

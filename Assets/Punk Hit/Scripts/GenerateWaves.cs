@@ -14,7 +14,7 @@ public class GenerateWaves : MonoBehaviour {
     void Update() {
         if (Input.GetButtonDown("Fire1")) {
             GameObject ondaSonora = Instantiate(soundWave, transform.position, transform.rotation);
-            ondaSonora.GetComponent<Rigidbody>().AddRelativeForce(0, 0, speed);
+            ondaSonora.GetComponent<Rigidbody>().AddRelativeForce(speed, 0, 0);
         }
     }
 }
