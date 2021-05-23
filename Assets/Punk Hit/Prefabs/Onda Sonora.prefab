@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2398522105451553605}
   m_Layer: 0
   m_Name: Onda Sonora
-  m_TagString: Untagged
+  m_TagString: Onda Media
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,8 +124,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 583483976127380302}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fd9d11b92236a344931878ff49e4680, type: 3}
+  m_Script: {fileID: 11500000, guid: b62bf68745747d147b2fb0d7bc0cfe44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushSpeed: 1
-  selfObject: {fileID: 583483976127380302}
+  ondaSonora: {fileID: 583483976127380302}
+  pushSpeed: 30
+  fineOnda: 0.5
