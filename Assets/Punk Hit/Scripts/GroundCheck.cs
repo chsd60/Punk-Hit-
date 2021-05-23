@@ -15,7 +15,7 @@ public class GroundCheck : MonoBehaviour {
             isGrounded = true;
         } else {
             isGrounded = false;
-            Debug.Log("air");
+            // Debug.Log("air");
         }
     }
 }
