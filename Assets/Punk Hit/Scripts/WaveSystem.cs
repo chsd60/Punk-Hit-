@@ -4,24 +4,29 @@ using UnityEngine;
 
 public class WaveSystem : MonoBehaviour {
 
+    public GameObject ondaSonora;
     public float pushSpeed;
+    public float fineOnda;
 
 
     private void Start() {
-        DeleteThis();
+        StartCoroutine(DeleteThis());
     }
 
     // Probabilmente dovrò spostare tutto in script diversi da mettere ai singoli GameObject.
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Spingibile")) {
-            other.attachedRigidbody.AddForce(transform.forward * pushSpeed, ForceMode.Impulse);
+            other.attachedRigidbody.AddForce(transform.right * pushSpeed, ForceMode.Impulse);
         } else if (other.gameObject.CompareTag("Distruggibile")) {
             other.gameObject.SetActive(false);
         } 
     }
 
     IEnumerator DeleteThis() {
-        yield return new WaitForSeconds(1);
-        Destroy(gameObject);
+        Debug.Log("Cosa");
+        yield return new WaitForSeconds(fineOnda);
+        Debug.Log("Significa");
+        Destroy(ondaSonora);
+        Debug.Log("Questo");
     }
 }
