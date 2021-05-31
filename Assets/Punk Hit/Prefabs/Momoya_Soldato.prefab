@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 2986801960264642065}
   - component: {fileID: 2218510132547381792}
   - component: {fileID: 6774820810298114737}
-  - component: {fileID: 4748096685898781937}
+  - component: {fileID: 8184252173111081577}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"player","value":null,"$version":"A"},{"name":"spotDistance","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"regularSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"attackSpeed","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2573489680781261275}
     - {fileID: 2573489680887388592}
@@ -148,9 +148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: d331a2b8ebd050346b9d0469add60352, type: 2}
+    _json: '{"nest":{"source":"Macro","macro":null,"embed":null}}'
+    _objectReferences: []
 --- !u!114 &2986801960264642065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,19 +193,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &4748096685898781937
-BoxCollider:
+--- !u!114 &8184252173111081577
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2573489679593203089}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: a4305f96f0639904cbfff41c912f8f5a, type: 2}
 --- !u!1 &2573489680781261272
 GameObject:
   m_ObjectHideFlags: 0
