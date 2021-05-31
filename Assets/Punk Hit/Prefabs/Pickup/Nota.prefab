@@ -111,7 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tags:
   - Player
-  - Wave
+  - Onda Media
   spawnedPrefab: {fileID: 0}
   points: 10
   notes: 1

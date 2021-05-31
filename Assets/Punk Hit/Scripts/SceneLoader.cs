@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
-    [SerializeField] private int sceneToLoad;
 
     public void LoadNextScene() {
-        SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
+        //SceneManager.LoadScene(scena1, LoadSceneMode.Single);
     }
 }
