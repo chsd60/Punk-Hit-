@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Variables))]
 public class VariableManager : MonoBehaviour
@@ -19,7 +20,7 @@ public class VariableManager : MonoBehaviour
         sceneVariables = GetComponent<Variables>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
         
-        PickupGuitar(GuitarTypes.Media);
+        AddGuitar(GuitarTypes.Media);
     }
 
     //Punti
@@ -70,7 +71,7 @@ public class VariableManager : MonoBehaviour
     
     //Chitarre
 
-    public void PickupGuitar(GuitarTypes type)
+    public void AddGuitar(GuitarTypes type)
     {
         guitarInventory.Add(type);
     }

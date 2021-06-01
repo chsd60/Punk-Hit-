@@ -7,7 +7,7 @@ public class PickupGuitar : PickupBase
     public GuitarTypes type;
     protected override void Pick()
     {
-        FindObjectOfType<VariableManager>().PickupGuitar(type);
+        FindObjectOfType<VariableManager>().AddGuitar(type);
         // Assegnare la chitarra
         
         base.Pick();
