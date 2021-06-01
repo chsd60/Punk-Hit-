@@ -12,10 +12,14 @@ public class VariableManager : MonoBehaviour
     [SerializeField]
     private UIManager uiManager;
 
+    private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
+    
     private void Start()
     {
         sceneVariables = GetComponent<Variables>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
+        
+        PickupGuitar(GuitarTypes.Media);
     }
 
     //Punti
@@ -62,5 +66,12 @@ public class VariableManager : MonoBehaviour
     public void SetFan(int index, bool value = true)
     {
         sceneVariables.declarations.Get<List<bool>>("listaFan")[index] = value;
+    }
+    
+    //Chitarre
+
+    public void PickupGuitar(GuitarTypes type)
+    {
+        guitarInventory.Add(type);
     }
 }
