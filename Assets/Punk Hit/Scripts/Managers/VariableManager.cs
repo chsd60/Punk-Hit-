@@ -8,13 +8,13 @@ using UnityEngine;
 public class VariableManager : MonoBehaviour
 {
     private Variables sceneVariables;
-    // TODO: collegare l'UI a questo script
-    // private Text uiManager;
+
+    [SerializeField]
+    private UIManager uiManager;
 
     private void Start()
     {
         sceneVariables = GetComponent<Variables>();
-        // uiManager = GetComponent<uiManager>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
     }
 
@@ -28,7 +28,7 @@ public class VariableManager : MonoBehaviour
     public void SetPoints(int points)
     {
         sceneVariables.declarations.Set("punti", points);
-        // uiManager.UpdatePoints();
+        uiManager.UpdatePoints(GetPoints());
 
     }
 
@@ -45,6 +45,7 @@ public class VariableManager : MonoBehaviour
 
     public void SetNotes(int notes) {
         sceneVariables.declarations.Set("note", notes);
+        uiManager.UpdateNotes(GetNotes());
     }
 
     public void AddNotes(int notes) {

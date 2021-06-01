@@ -7,17 +7,16 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
 
-    private Variables sceneVariables;
-
-    private int puntiUIInt;
     public Text puntiUI;
+    public Text noteUI;
 
-    private void Start() {
-        sceneVariables = GetComponent<Variables>();
-        // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
+    public void UpdatePoints(int pts) {
+        puntiUI.text = "Punti: " + pts;
     }
-    public void UpdatePoints() {
-        puntiUIInt = sceneVariables.declarations.Get<int>("punti");
-        puntiUI.text = "Punti: " + puntiUIInt;
+
+    public void UpdateNotes(int note) {
+        noteUI.text = "Note: " + note;
     }
+
+
 }
