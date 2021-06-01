@@ -14,6 +14,8 @@ public class VariableManager : MonoBehaviour
     private UIManager uiManager;
 
     private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
+
+    private int guitarIndex = 0;
     
     private void Start()
     {
@@ -74,5 +76,17 @@ public class VariableManager : MonoBehaviour
     public void AddGuitar(GuitarTypes type)
     {
         guitarInventory.Add(type);
+    }
+
+    public GuitarTypes GetSelectedGuitar()
+    {
+        return guitarInventory[guitarIndex];
+    }
+
+    public GuitarTypes SelectNextGuitar()
+    {
+        guitarIndex++;
+        if (guitarIndex >= guitarInventory.Count) guitarIndex = 0;
+        return GetSelectedGuitar();
     }
 }
