@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Variables))]
 public class VariableManager : MonoBehaviour
@@ -12,10 +13,16 @@ public class VariableManager : MonoBehaviour
     [SerializeField]
     private UIManager uiManager;
 
+    private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
+
+    private int guitarIndex = 0;
+    
     private void Start()
     {
         sceneVariables = GetComponent<Variables>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
+        
+        AddGuitar(GuitarTypes.Media);
     }
 
     //Punti
@@ -62,5 +69,24 @@ public class VariableManager : MonoBehaviour
     public void SetFan(int index, bool value = true)
     {
         sceneVariables.declarations.Get<List<bool>>("listaFan")[index] = value;
+    }
+    
+    //Chitarre
+
+    public void AddGuitar(GuitarTypes type)
+    {
+        guitarInventory.Add(type);
+    }
+
+    public GuitarTypes GetSelectedGuitar()
+    {
+        return guitarInventory[guitarIndex];
+    }
+
+    public GuitarTypes SelectNextGuitar()
+    {
+        guitarIndex++;
+        if (guitarIndex >= guitarInventory.Count) guitarIndex = 0;
+        return GetSelectedGuitar();
     }
 }
