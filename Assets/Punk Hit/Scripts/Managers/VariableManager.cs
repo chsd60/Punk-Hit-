@@ -3,19 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Variables))]
 public class VariableManager : MonoBehaviour
 {
     private Variables sceneVariables;
-    // TODO: collegare l'UI a questo script
-    // private Text uiManager;
 
+    [SerializeField]
+    private UIManager uiManager;
+
+    private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
+
+    private int guitarIndex = 0;
+    
     private void Start()
     {
         sceneVariables = GetComponent<Variables>();
-        // uiManager = GetComponent<uiManager>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
+        
+        AddGuitar(GuitarTypes.Media);
     }
 
     //Punti
@@ -28,7 +35,7 @@ public class VariableManager : MonoBehaviour
     public void SetPoints(int points)
     {
         sceneVariables.declarations.Set("punti", points);
-        // uiManager.UpdatePoints();
+        uiManager.UpdatePoints(GetPoints());
 
     }
 
@@ -45,6 +52,7 @@ public class VariableManager : MonoBehaviour
 
     public void SetNotes(int notes) {
         sceneVariables.declarations.Set("note", notes);
+        uiManager.UpdateNotes(GetNotes());
     }
 
     public void AddNotes(int notes) {
@@ -61,5 +69,24 @@ public class VariableManager : MonoBehaviour
     public void SetFan(int index, bool value = true)
     {
         sceneVariables.declarations.Get<List<bool>>("listaFan")[index] = value;
+    }
+    
+    //Chitarre
+
+    public void AddGuitar(GuitarTypes type)
+    {
+        guitarInventory.Add(type);
+    }
+
+    public GuitarTypes GetSelectedGuitar()
+    {
+        return guitarInventory[guitarIndex];
+    }
+
+    public GuitarTypes SelectNextGuitar()
+    {
+        guitarIndex++;
+        if (guitarIndex >= guitarInventory.Count) guitarIndex = 0;
+        return GetSelectedGuitar();
     }
 }

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soundWave: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  speed: 30
+  speed: 600
 --- !u!1 &2343469776453614355
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ Rigidbody:
   m_GameObject: {fileID: 2343469776453614355}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 1
+  m_Drag: 1.4
   m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -232,8 +232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
-  speed: 4
-  speedDimezzata: 0
+  speed: 8
+  speedDimezzata: 1.5
 --- !u!114 &2343469776453614346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
-  jumpForce: 10
+  jumpForce: 12
 --- !u!114 &2343469776453614347
 MonoBehaviour:
   m_ObjectHideFlags: 0

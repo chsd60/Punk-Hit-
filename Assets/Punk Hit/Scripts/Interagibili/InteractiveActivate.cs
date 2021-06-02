@@ -5,15 +5,9 @@ using UnityEngine.Events;
 
 public class InteractiveActivate : InteractiveBase {
 
-    public GameObject[] toActivate;
-    public GameObject[] toDisable;
+    public UnityEvent activateActions;
 
     protected override void Interact() {
-        foreach (var a in toActivate) {
-            a.SetActive(true);
-        }
-        foreach (var d in toDisable) {
-            d.SetActive(false);
-        }
+        activateActions.Invoke();
     }
 }
