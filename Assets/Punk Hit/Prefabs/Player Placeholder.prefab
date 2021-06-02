@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
-  speed: 8
+  speed: 6
   speedDimezzata: 1.5
 --- !u!114 &2343469776453614346
 MonoBehaviour:
