@@ -61,6 +61,11 @@ public class VariableManager : MonoBehaviour
 
     //Fan
 
+    public bool[] GetFanArray()
+    {
+        return sceneVariables.declarations.Get<List<bool>>("listaFan").ToArray();
+    }
+    
     public bool GetFan(int index)
     {
         return sceneVariables.declarations.Get<List<bool>>("listaFan")[index];
