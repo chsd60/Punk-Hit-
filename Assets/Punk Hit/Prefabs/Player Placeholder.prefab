@@ -99,7 +99,10 @@ MonoBehaviour:
   soundWaveHeavy: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveLight: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveSpecial: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  speed: 600
+  soundWaveNormalVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveLightVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveSpecialVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
 --- !u!1 &2343469774845804973
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +202,10 @@ MonoBehaviour:
   soundWaveHeavy: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveLight: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveSpecial: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  speed: 600
+  soundWaveNormalVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveLightVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveSpecialVfx: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
 --- !u!1 &2343469776453614355
 GameObject:
   m_ObjectHideFlags: 0
