@@ -14,6 +14,10 @@ public class GenerateWaves : MonoBehaviour {
     public GameObject soundWaveLightVfx;
     public GameObject soundWaveSpecialVfx;
 
+    public float cooldownTime = .8f;
+
+    private bool canShoot = true;
+    
     private VariableManager _varMgr;
     void Start()
     {
@@ -44,9 +48,17 @@ public class GenerateWaves : MonoBehaviour {
                 break;
         }
         
-        if (Input.GetButtonDown("Fire1")) {
+        if (Input.GetButtonDown("Fire1") && canShoot)
+        {
+            canShoot = false;
             GameObject ondaSonora = Instantiate(soundWave, transform.position, transform.rotation);
             GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, transform.position, transform.rotation);
+            Invoke("ReactivateGuitar", cooldownTime);
         }
+    }
+
+    private void ReactivateGuitar()
+    {
+        canShoot = true;
     }
 }
