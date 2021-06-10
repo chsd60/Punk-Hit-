@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.VisualScripting;
 
 [RequireComponent(typeof(Collider))]
 public class ObjectAoE : MonoBehaviour {
@@ -12,7 +13,7 @@ public class ObjectAoE : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
-        
+        CustomEvent.Trigger(other.gameObject, "Stun");
     }
 
 }
