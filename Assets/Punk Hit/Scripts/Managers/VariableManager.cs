@@ -81,7 +81,7 @@ public class VariableManager : MonoBehaviour {
 
     public GuitarTypes SelectNextGuitar() {
         guitarIndex++;
-        if (guitarIndex >= guitarInventory.Count) guitarIndex = 0;
+        if (guitarIndex > guitarInventory.Count - 1) guitarIndex = 0;
         uiManager.UpdateGuitar(GetSelectedGuitar());
         return GetSelectedGuitar();
     }
