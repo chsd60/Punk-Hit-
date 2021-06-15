@@ -12,11 +12,11 @@ public class CharacterMovement : MonoBehaviour {
     public float speedDimezzata;
 
     private GroundCheck _gCheck;
-    //private DisableWallMovement _wCheck;
+    private DisableWallMovement _wCheck;
     void Start() {
         rbProtagonista = GetComponent<Rigidbody>();
         _gCheck = gameObject.GetComponent<GroundCheck>();
-   //     _wCheck = gameObject.GetComponent<DisableWallMovement>();
+        _wCheck = gameObject.GetComponent<DisableWallMovement>();
     }
 
 
@@ -24,12 +24,12 @@ public class CharacterMovement : MonoBehaviour {
 
 
         orientation = Input.GetAxisRaw("Horizontal");
+        if (_wCheck.touchesRWall) orientation = Mathf.Clamp(orientation, -1, 0);
+        else if (_wCheck.touchesLWall) orientation = Mathf.Clamp(orientation, 0, 1);
         speedCalc = transform.right * speed * orientation;
 
         if (!_gCheck.isGrounded) speedCalc /= speedDimezzata;
 
-  //      if (_wCheck.touchesRWall) Mathf.Clamp(orientation, -1, 0);
-    //    if (_wCheck.touchesLWall) Mathf.Clamp(orientation, 0, 1);
         rbProtagonista.AddForce(speedCalc, ForceMode.Force);
     }
 }
