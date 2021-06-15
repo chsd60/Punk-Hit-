@@ -11,7 +11,14 @@ public class ChangeGuitar : MonoBehaviour {
     public GameObject chitarraL;
     public GameObject chitarraS;
 
-    private void Start() {
+    private void Start()
+    {
+        StartCoroutine("CheckGuitar");
+    }
+
+    IEnumerator CheckGuitar()
+    {
+        yield return new WaitForSeconds(.01f);
         vManager = FindObjectOfType<VariableManager>();
         UpdateGuitarSkin(vManager.GetSelectedGuitar());
     }
