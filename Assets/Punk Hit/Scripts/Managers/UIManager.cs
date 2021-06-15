@@ -18,5 +18,5 @@ public class UIManager : MonoBehaviour {
         noteUI.text = "Note: " + note;
     }
 
-
+    //public void UpdateFans()
 }

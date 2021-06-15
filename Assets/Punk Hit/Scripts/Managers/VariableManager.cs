@@ -9,8 +9,9 @@ using UnityEngine.SceneManagement;
 public class VariableManager : MonoBehaviour {
     private Variables sceneVariables;
 
-    [SerializeField]
-    private UIManager uiManager;
+    [SerializeField] private UIManager uiManager;
+    [SerializeField] private ChangeGuitar changeGuitar;
+
 
     private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
 
