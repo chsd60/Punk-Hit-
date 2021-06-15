@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 2343469776453614346}
   - component: {fileID: 2343469776453614347}
   - component: {fileID: 2343469776453614344}
+  - component: {fileID: 4353160156433994401}
   m_Layer: 6
   m_Name: Player Placeholder
   m_TagString: Player
@@ -236,6 +237,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skins:
   - {fileID: 5541198354968806732}
+--- !u!114 &4353160156433994401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2343469776453614355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4afc6037335347644b52e64762d50b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchesRWall: 0
+  touchesLWall: 0
 --- !u!1 &5080325168506814915
 GameObject:
   m_ObjectHideFlags: 0
