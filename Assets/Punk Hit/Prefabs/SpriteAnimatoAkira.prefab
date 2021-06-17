@@ -470,7 +470,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6855525218142478203
 Transform:
   m_ObjectHideFlags: 0
@@ -1986,11 +1986,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2226897238698077780, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.45
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 2226897238698077780, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.78
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 2226897238698077780, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2027,6 +2027,10 @@ PrefabInstance:
     - target: {fileID: 4116624402329966850, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
       propertyPath: m_Name
       value: Flame (Pesante)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4116624402329966850, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4823716481364929796, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
       propertyPath: m_SortingLayer

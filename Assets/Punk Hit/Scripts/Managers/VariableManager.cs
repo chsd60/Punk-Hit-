@@ -9,8 +9,8 @@ using UnityEngine.SceneManagement;
 public class VariableManager : MonoBehaviour {
     private Variables sceneVariables;
 
-    [SerializeField]
-    private UIManager uiManager;
+    [SerializeField] private UIManager uiManager;
+
 
     private List<GuitarTypes> guitarInventory = new List<GuitarTypes>();
 
@@ -21,6 +21,7 @@ public class VariableManager : MonoBehaviour {
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
         
         AddGuitar(GuitarTypes.Media);
+        uiManager.UpdateGuitar(GetSelectedGuitar());
     }
 
     //Punti
@@ -71,7 +72,7 @@ public class VariableManager : MonoBehaviour {
     //Chitarre
 
     public void AddGuitar(GuitarTypes type) {
-        guitarInventory.Add(type);
+        guitarInventory.Add(type); //type viene dal gameobject della chitarra
     }
 
     public GuitarTypes GetSelectedGuitar() {
@@ -80,7 +81,8 @@ public class VariableManager : MonoBehaviour {
 
     public GuitarTypes SelectNextGuitar() {
         guitarIndex++;
-        if (guitarIndex >= guitarInventory.Count) guitarIndex = 0;
+        if (guitarIndex > guitarInventory.Count - 1) guitarIndex = 0;
+        uiManager.UpdateGuitar(GetSelectedGuitar());
         return GetSelectedGuitar();
     }
 }
