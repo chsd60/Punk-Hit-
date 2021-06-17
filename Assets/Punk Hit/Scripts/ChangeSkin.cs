@@ -8,10 +8,11 @@ public class ChangeSkin : MonoBehaviour {
     public GameObject[] skins;
 
     void Start() {
-        skins[0].SetActive(true);
+//        skins[0].SetActive(true);
     }
 
     void Update() {
+        /*
         if (Input.GetButtonDown("NextSkin")) {
             skins[skinIndex].SetActive(false);
             skinIndex++;
@@ -26,6 +27,6 @@ public class ChangeSkin : MonoBehaviour {
                 skinIndex = skins.Length - 1;
             }
             skins[skinIndex].SetActive(true);
-        }
+        }*/
     }
 }
