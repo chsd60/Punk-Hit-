@@ -273,16 +273,16 @@ MonoBehaviour:
   guitarH: {fileID: 21300000, guid: 39744dcac2288a348814b7807ac7d7a7, type: 3}
   guitarL: {fileID: 21300000, guid: 1d80737580bc0944caed3a34da8cfdb3, type: 3}
   guitarS: {fileID: 21300000, guid: a512adedcd62fca4598a66e969e5f4b2, type: 3}
-  minArg: 1
-  minOro: 3
-  minPlat: 5
-  minDiam: 7
+  minArg: 10
+  minOro: 30
+  minPlat: 50
+  minDiam: 70
   vinylUI: {fileID: 8153301597004874110}
-  vinile: {fileID: -2413806693520163455, guid: 41d5e31e28d525349822f90a2627a4bd, type: 3}
-  vinileArg: {fileID: -2413806693520163455, guid: 00cd9c5638ba9314f83cb7185d4317a3, type: 3}
-  vinileOro: {fileID: -2413806693520163455, guid: 43b0003430d07884db31656bb77b6113, type: 3}
-  vinilePlat: {fileID: -2413806693520163455, guid: e83b303a3242a014bb123a784a1d802e, type: 3}
-  vinileDiam: {fileID: -2413806693520163455, guid: 61451f95959c6b84b93b5b0b888c641c, type: 3}
+  vinile: {fileID: 21300000, guid: 0c16d197511e57146939a9b51e407976, type: 3}
+  vinileArg: {fileID: 21300000, guid: f2e09933c99014247ac3e107408eae03, type: 3}
+  vinileOro: {fileID: 21300000, guid: 5a15ae58ccf01fc4cb242838f629e0f2, type: 3}
+  vinilePlat: {fileID: 21300000, guid: 565466175d5d22c488b610c26e079d8b, type: 3}
+  vinileDiam: {fileID: 21300000, guid: 7e65cbc4eb9b21b458437e283f475c26, type: 3}
 --- !u!1 &8982139769324511286
 GameObject:
   m_ObjectHideFlags: 0
