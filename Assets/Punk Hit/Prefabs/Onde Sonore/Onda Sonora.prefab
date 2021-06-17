@@ -128,5 +128,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ondaSonora: {fileID: 583483976127380302}
-  waveSpeed: 300
+  waveSpeed: 0
   fineOnda: 1

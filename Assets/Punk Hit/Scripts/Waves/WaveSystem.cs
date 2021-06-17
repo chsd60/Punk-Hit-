@@ -6,17 +6,18 @@ public class WaveSystem : MonoBehaviour {
 
     public GameObject ondaSonora;
     //public float pushSpeed;
-    public float waveSpeed = 100;
+    public float waveSpeed;
     public float fineOnda;
 
     private void Start() {
         GetComponent<Rigidbody>().AddForce(transform.forward * waveSpeed, ForceMode.Impulse);
         StartCoroutine(DeleteThis());
-        //StartCoroutine(LimitSpeed());
     }
 
 
     // Probabilmente dovrò spostare tutto in script diversi da mettere ai singoli GameObject.
+
+    //TODO: Creare script diversi per ogni onda.
     private void OnCollisionEnter(Collision other) {
         if (other.gameObject.GetComponent<DestroyableBase>() != null) {
             other.gameObject.GetComponent<DestroyableBase>().DestroyItem();
@@ -24,11 +25,10 @@ public class WaveSystem : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    /**IEnumerator LimitSpeed() {
-        yield return new WaitForSeconds(0.1f);
-        Destroy(ondaSonora.GetComponent<ConstantForce>());
-
-    }**/
+    protected virtual void InitialPush() {
+        GetComponent<Rigidbody>().AddForce(transform.forward * waveSpeed, ForceMode.Impulse);
+        StartCoroutine(DeleteThis());
+    }
 
     IEnumerator DeleteThis() {
         yield return new WaitForSeconds(fineOnda);
