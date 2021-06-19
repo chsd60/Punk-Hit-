@@ -618,6 +618,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 85b4317a0e164e744bc7ab5d2cb8ff20, type: 3}
+--- !u!1 &501534680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1321052648880577106, guid: 7b73fd97f4bcd8f409be96644e9318ce, type: 3}
+  m_PrefabInstance: {fileID: 2343469776155845886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &534618482 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2292493267515690109, guid: 85b4317a0e164e744bc7ab5d2cb8ff20, type: 3}
@@ -3990,6 +3995,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2343469776453614344, guid: 7b73fd97f4bcd8f409be96644e9318ce, type: 3}
+      propertyPath: skins.Array.data[0]
+      value: 
+      objectReference: {fileID: 501534680}
     - target: {fileID: 2343469776453614348, guid: 7b73fd97f4bcd8f409be96644e9318ce, type: 3}
       propertyPath: m_RootOrder
       value: 5

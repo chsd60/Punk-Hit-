@@ -35,7 +35,7 @@ public class MenuManager : MonoBehaviour {
         pausaUI.SetActive(false);
     }
 
-    private void AttivaChiudiMenu() {
+    public void AttivaChiudiMenu() {
         chiudiMenu = false;
     }
 }
