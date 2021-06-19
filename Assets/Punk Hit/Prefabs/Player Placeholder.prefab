@@ -364,8 +364,8 @@ MonoBehaviour:
   waveSpawnerDX: {fileID: 2343469774845804973}
   waveSpawnerSX: {fileID: 569788264896965717}
   soundWaveNormal: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  soundWaveHeavy: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  soundWaveLight: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveHeavy: {fileID: 583483976127380302, guid: e70a49b207a16ee4b8cf2d946a0f45a6, type: 3}
+  soundWaveLight: {fileID: 583483976127380302, guid: 07b47039aaf31bd4fbb6dfab39105528, type: 3}
   soundWaveSpecial: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveNormalVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
   soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
@@ -438,6 +438,10 @@ PrefabInstance:
     - target: {fileID: 6855525218972236303, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855525219140908598, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
