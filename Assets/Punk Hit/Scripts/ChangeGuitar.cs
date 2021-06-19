@@ -23,6 +23,7 @@ public class ChangeGuitar : MonoBehaviour {
         UpdateGuitarSkin(vManager.GetSelectedGuitar());
     }
 
+    //TODO: Aggiungere "SelectPreviousGuitar"
     private void Update() {
         if(Input.GetButtonDown("ChangeGuitar")) {
             vManager.SelectNextGuitar();
