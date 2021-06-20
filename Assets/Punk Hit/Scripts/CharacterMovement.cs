@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class CharacterMovement : MonoBehaviour {
 
@@ -9,14 +10,16 @@ public class CharacterMovement : MonoBehaviour {
     public float speed;
     private float orientation;
     private Vector3 speedCalc;
-    public float speedDimezzata;
+    [FormerlySerializedAs("speedDimezzata")]
+    public float moltMovimentoInCaduta;
+    public float forzaCaduta;
 
     private GroundCheck _gCheck;
-    //private DisableWallMovement _wCheck;
+    private DisableWallMovement _wCheck;
     void Start() {
         rbProtagonista = GetComponent<Rigidbody>();
         _gCheck = gameObject.GetComponent<GroundCheck>();
-   //     _wCheck = gameObject.GetComponent<DisableWallMovement>();
+        _wCheck = gameObject.GetComponent<DisableWallMovement>();
     }
 
 
@@ -24,12 +27,27 @@ public class CharacterMovement : MonoBehaviour {
 
 
         orientation = Input.GetAxisRaw("Horizontal");
+        if (_wCheck.touchesRWall) orientation = Mathf.Clamp(orientation, -1, 0);
+        else if (_wCheck.touchesLWall) orientation = Mathf.Clamp(orientation, 0, 1);
         speedCalc = transform.right * speed * orientation;
 
-        if (!_gCheck.isGrounded) speedCalc /= speedDimezzata;
+        if (!_gCheck.isGrounded)
+        {
+            speedCalc *= moltMovimentoInCaduta;
+        }
 
-  //      if (_wCheck.touchesRWall) Mathf.Clamp(orientation, -1, 0);
-    //    if (_wCheck.touchesLWall) Mathf.Clamp(orientation, 0, 1);
+        if (IsFallingDown())
+        {
+            rbProtagonista.AddForce(transform.up * -1 * forzaCaduta, ForceMode.Force);
+        }
+
         rbProtagonista.AddForce(speedCalc, ForceMode.Force);
     }
+    
+    // London Bridge
+    public bool IsFallingDown()
+    {
+        return !gameObject.GetComponent<GroundCheck>().isGrounded && rbProtagonista.velocity.y < 0;
+    }
+
 }
