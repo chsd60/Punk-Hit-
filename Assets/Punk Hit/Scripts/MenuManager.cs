@@ -36,6 +36,6 @@ public class MenuManager : MonoBehaviour {
     }
 
     public void AttivaChiudiMenu() {
-        chiudiMenu = false;
+        chiudiMenu = true;
     }
 }
