@@ -196,8 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
   speed: 30
-  moltMovimentoInCaduta: 1.5
-  forzaCaduta: 0
+  moltMovimentoInCaduta: 0.9
+  forzaCaduta: 15
 --- !u!114 &2343469776453614346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
-  jumpForce: 12
+  jumpForce: 11
 --- !u!114 &2343469776453614347
 MonoBehaviour:
   m_ObjectHideFlags: 0

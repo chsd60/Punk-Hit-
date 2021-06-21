@@ -8,6 +8,10 @@ public class MenuManager : MonoBehaviour {
     private bool chiudiMenu = true; //da mettere a posto, al momento quando premo il pulsante si attiva sia l'apertura che la chiusura del menu simultaneamente
     public GameObject pausaUI;
 
+    public void Start() {
+        Time.timeScale = 1;
+    }
+
     void FixedUpdate()
     {
         if (Input.GetButtonDown("Menu") && !menuStop) {
