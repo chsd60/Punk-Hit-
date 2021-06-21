@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679507499488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Momoya_Soldato
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679583058953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 6774820810298114737}
   - component: {fileID: 8184252173111081577}
   - component: {fileID: 4907400792078417690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680781261275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680887388592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -293,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2231383357907091030}
   - component: {fileID: 6623794784480964852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: "mo-mo-ya elit\xE8"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
