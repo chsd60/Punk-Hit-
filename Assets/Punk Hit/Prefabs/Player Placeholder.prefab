@@ -196,8 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
   speed: 30
-  moltMovimentoInCaduta: 1.5
-  forzaCaduta: 0
+  moltMovimentoInCaduta: 0.9
+  forzaCaduta: 15
 --- !u!114 &2343469776453614346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
-  jumpForce: 12
+  jumpForce: 11
 --- !u!114 &2343469776453614347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,8 +364,8 @@ MonoBehaviour:
   waveSpawnerDX: {fileID: 2343469774845804973}
   waveSpawnerSX: {fileID: 569788264896965717}
   soundWaveNormal: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  soundWaveHeavy: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  soundWaveLight: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
+  soundWaveHeavy: {fileID: 583483976127380302, guid: e70a49b207a16ee4b8cf2d946a0f45a6, type: 3}
+  soundWaveLight: {fileID: 583483976127380302, guid: 07b47039aaf31bd4fbb6dfab39105528, type: 3}
   soundWaveSpecial: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
   soundWaveNormalVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
   soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
@@ -379,6 +379,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 144099452285688310}
     m_Modifications:
+    - target: {fileID: 6855525217779234643, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855525217779234643, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Size.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855525217779234643, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 836666ff49199114895b0c14788a0478, type: 3}
+    - target: {fileID: 6855525217779234643, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855525218236215322, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f683c7cf31e43cb44b01b09a61d6bebc, type: 3}
+    - target: {fileID: 6855525218236215322, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6855525218972236302, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
       propertyPath: m_Name
       value: SpriteAnimatoAkira
@@ -438,6 +462,10 @@ PrefabInstance:
     - target: {fileID: 6855525218972236303, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6855525219140908598, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}

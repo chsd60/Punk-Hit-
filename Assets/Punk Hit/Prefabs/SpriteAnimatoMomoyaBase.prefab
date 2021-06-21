@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629065434481}
   - component: {fileID: 8310509629065434482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: testa 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629307247787}
   - component: {fileID: 8310509629307247780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piede gu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,9 +177,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8310509629327032743}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteAnimatoMomoyaBase
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629504855343}
   - component: {fileID: 8310509629504855336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba 1 destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629655219536}
   - component: {fileID: 8310509629655219537}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: piede destro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629740458559}
   - component: {fileID: 8310509629740458552}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Gamba 2 - Rotula destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509629833244717}
   - component: {fileID: 8310509629833244718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba 1 sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509630372494207}
   - component: {fileID: 8310509630372494206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteMomoyaBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8310509630877590292}
   - component: {fileID: 8310509630877590293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba 2 + rotula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
