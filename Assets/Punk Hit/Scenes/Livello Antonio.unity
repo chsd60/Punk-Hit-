@@ -9506,7 +9506,7 @@ GameObject:
   - component: {fileID: 1024391370}
   - component: {fileID: 1024391369}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Muro invisibile inizio livello
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
