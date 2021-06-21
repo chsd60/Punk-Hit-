@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6564240435803914524}
   - component: {fileID: 6337474360949688176}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: alieno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679507499488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Momoya_Base
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679583058953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   - component: {fileID: 2218510132547381792}
   - component: {fileID: 6774820810298114737}
   - component: {fileID: 7411899416026249861}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680781261275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680887388592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
