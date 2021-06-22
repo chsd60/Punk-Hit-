@@ -26,13 +26,13 @@ public class GenerateWaves : MonoBehaviour {
     public float cooldownTime = .8f;
 
     private bool canShoot = true;
-    
+
     private VariableManager _varMgr;
     void Start() {
         _varMgr = FindObjectOfType<VariableManager>();
     }
 
-    void Update() {
+    void FixedUpdate() {
         GameObject soundWave;
         GameObject soundWaveVfx;
         switch (_varMgr.GetSelectedGuitar()) {
@@ -71,4 +71,6 @@ public class GenerateWaves : MonoBehaviour {
     private void ReactivateGuitar() {
         canShoot = true;
     }
+
+
 }

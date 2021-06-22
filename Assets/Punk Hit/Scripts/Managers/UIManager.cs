@@ -32,6 +32,9 @@ public class UIManager : MonoBehaviour {
     public Sprite vinilePlat;
     public Sprite vinileDiam;
 
+    public void Start() {
+        Invoke("UpdateDisc", 0);
+    }
     public void UpdatePoints(int pts) {
         punti = pts;
         puntiUI.text = "Punti: " + pts;
