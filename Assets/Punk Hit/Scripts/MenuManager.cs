@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MenuManager : MonoBehaviour {
 
-    public bool menuStop = false;
-    private bool chiudiMenu = true; //da mettere a posto, al momento quando premo il pulsante si attiva sia l'apertura che la chiusura del menu simultaneamente
     public GameObject pausaUI;
 
     private VariableManager _varMgr;
@@ -23,32 +21,32 @@ public class MenuManager : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Menu") && !menuStop) {
-            chiudiMenu = false;
-            Invoke("AttivaRichiudiMenu", 0.1f);
+        if (Input.GetButtonDown("Menu") && !pausaUI.activeInHierarchy) {
             OpenMenu();
         }
-
-        if (Input.GetButtonDown("Menu") && menuStop && chiudiMenu) {
+        else if (Input.GetButtonDown("Menu"))
+        {
             CloseMenu();
         }
     }
 
-    public void OpenMenu() {
+    public void OpenMenu()
+    {
+        if (!_varMgr) return;
         Time.timeScale = 0;
         _varMgr.SetGamePaused(true);
-        menuStop = true;
         pausaUI.SetActive(true);
     }
 
     public void CloseMenu() {
-        _varMgr.SetGamePaused(false);
+        Debug.Log("Close");
+        if (!_varMgr) return;
         Time.timeScale = 1;
-        menuStop = false;
+        _varMgr.SetGamePaused(false);
         pausaUI.SetActive(false);
     }
 
     public void AttivaChiudiMenu() {
-        chiudiMenu = true;
+        //chiudiMenu = true;
     }
 }
