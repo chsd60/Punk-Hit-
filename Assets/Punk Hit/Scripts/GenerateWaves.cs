@@ -32,7 +32,7 @@ public class GenerateWaves : MonoBehaviour {
         _varMgr = FindObjectOfType<VariableManager>();
     }
 
-    void FixedUpdate() {
+    void Update() {
         GameObject soundWave;
         GameObject soundWaveVfx;
         switch (_varMgr.GetSelectedGuitar()) {
