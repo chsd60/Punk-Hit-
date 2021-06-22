@@ -16,16 +16,26 @@ public class CharacterMovement : MonoBehaviour {
 
     private GroundCheck _gCheck;
     private DisableWallMovement _wCheck;
-    void Start() {
+    
+    private VariableManager _varMgr;
+
+    public void Start() {
+        StartCoroutine("Init");
+    }
+
+    IEnumerator Init()
+    {
+        yield return new WaitForEndOfFrame();
+        _varMgr = FindObjectOfType<VariableManager>();
         rbProtagonista = GetComponent<Rigidbody>();
         _gCheck = gameObject.GetComponent<GroundCheck>();
         _wCheck = gameObject.GetComponent<DisableWallMovement>();
     }
 
 
-    void FixedUpdate() {
-
-
+    void Update()
+    {
+        if (_varMgr == null || _varMgr.GetGamePaused()) return;
         orientation = Input.GetAxisRaw("Horizontal");
         if (_wCheck.touchesRWall) orientation = Mathf.Clamp(orientation, -1, 0);
         else if (_wCheck.touchesLWall) orientation = Mathf.Clamp(orientation, 0, 1);
@@ -44,7 +54,6 @@ public class CharacterMovement : MonoBehaviour {
         rbProtagonista.AddForce(speedCalc, ForceMode.Force);
     }
     
-    // London Bridge
     public bool IsFallingDown()
     {
         return !gameObject.GetComponent<GroundCheck>().isGrounded && rbProtagonista.velocity.y < 0;

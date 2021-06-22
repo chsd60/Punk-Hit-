@@ -28,11 +28,20 @@ public class GenerateWaves : MonoBehaviour {
     private bool canShoot = true;
 
     private VariableManager _varMgr;
-    void Start() {
+
+    public void Start() {
+        StartCoroutine("Init");
+    }
+
+    IEnumerator Init()
+    {
+        yield return new WaitForEndOfFrame();
         _varMgr = FindObjectOfType<VariableManager>();
     }
 
-    void Update() {
+    void Update()
+    {
+        if (_varMgr == null || _varMgr.GetGamePaused()) return;
         GameObject soundWave;
         GameObject soundWaveVfx;
         switch (_varMgr.GetSelectedGuitar()) {

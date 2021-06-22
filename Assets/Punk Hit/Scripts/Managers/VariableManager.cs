@@ -25,7 +25,16 @@ public class VariableManager : MonoBehaviour {
     }
 
     //Punti
+    public bool GetGamePaused() {
+        return sceneVariables.declarations.Get<bool>("gamePaused");
+    }
 
+    public void SetGamePaused(bool val) {
+        sceneVariables.declarations.Set("gamePaused", val);
+    }
+
+    //Punti
+    
     public int GetPoints() {
         return sceneVariables.declarations.Get<int>("punti");
     }
