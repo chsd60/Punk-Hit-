@@ -213,6 +213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbProtagonista: {fileID: 2343469776453614352}
   jumpForce: 11
+  jumpVfx: {fileID: 8862239513740156166, guid: 44c917d52fa8b324288333c33ea3d54f, type: 3}
 --- !u!114 &2343469776453614347
 MonoBehaviour:
   m_ObjectHideFlags: 0
