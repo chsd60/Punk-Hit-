@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class CharacterMovement : MonoBehaviour {
     
     private VariableManager _varMgr;
 
+    private Animator _animator;
+
     public void Start() {
         StartCoroutine("Init");
     }
@@ -30,6 +33,7 @@ public class CharacterMovement : MonoBehaviour {
         rbProtagonista = GetComponent<Rigidbody>();
         _gCheck = gameObject.GetComponent<GroundCheck>();
         _wCheck = gameObject.GetComponent<DisableWallMovement>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
 
@@ -52,6 +56,9 @@ public class CharacterMovement : MonoBehaviour {
         }
 
         rbProtagonista.AddForce(speedCalc, ForceMode.Force);
+
+        _animator.SetBool("Movimento", Math.Abs(orientation) > Single.Epsilon);
+        
     }
     
     public bool IsFallingDown()

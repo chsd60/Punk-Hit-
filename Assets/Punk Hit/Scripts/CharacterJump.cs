@@ -8,6 +8,7 @@ public class CharacterJump : MonoBehaviour {
     public float jumpForce;
     private bool grounded;
     private VariableManager _varMgr;
+    private Animator _animator;
 
     public void Start() {
         StartCoroutine("Init");
@@ -17,6 +18,7 @@ public class CharacterJump : MonoBehaviour {
     {
         yield return new WaitForEndOfFrame();
         _varMgr = FindObjectOfType<VariableManager>();
+        _animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
