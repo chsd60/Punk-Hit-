@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Punk Hit/Scenes/Scene prototipo/Movimento.unity
     guid: 1a6282b49d45095468721fb09a2eab43
+  - enabled: 0
+    path: Assets/Punk Hit/Scenes/Backup lol/Livello01 - old.unity
+    guid: 9597c273655dcd04cad356681eb625aa
   - enabled: 1
     path: Assets/Punk Hit/Scenes/Livello01.unity
-    guid: 9597c273655dcd04cad356681eb625aa
+    guid: 609bc94956fe25d48b52cd19e3b98147
   m_configObjects: {}
