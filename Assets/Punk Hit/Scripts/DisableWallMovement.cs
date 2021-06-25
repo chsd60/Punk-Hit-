@@ -12,10 +12,10 @@ public class DisableWallMovement : MonoBehaviour {
         distanceToWall = GetComponent<Collider>().bounds.extents.x + 0.1f;
     }
 
-    void FixedUpdate() {
-        if (Physics.Raycast(transform.position, Vector3.right, distanceToWall) ||
-            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), Vector3.right, distanceToWall) ||
-            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), Vector3.right, distanceToWall)) {
+   /** void FixedUpdate() {
+        if (Physics.Raycast(transform.position, Vector3.right, hit, distanceToWall) && hit.transform.tag == "Piattaforma"||
+            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), Vector3.right, hit, distanceToWall) && hit.transform.tag == "Piattaforma" ||
+            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), Vector3.right, hit, distanceToWall) && hit.transform.tag == "Piattaforma") {
             touchesRWall = true;
         } else touchesRWall = false;
 
@@ -24,7 +24,7 @@ public class DisableWallMovement : MonoBehaviour {
             Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), -Vector3.right, distanceToWall)) {
             touchesLWall = true;
         } else touchesLWall = false;
-    }
+    }**/
 
     private void OnDrawGizmosSelected()
     {

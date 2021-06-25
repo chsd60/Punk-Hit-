@@ -20,6 +20,6 @@ public class GenericWSystem : MonoBehaviour {
 
     IEnumerator DeleteThis() {
         yield return new WaitForSeconds(fineOnda);
-        Destroy(gameObject);
+        Destroy(this.gameObject);
     }
 }
