@@ -43,7 +43,7 @@ public class CharacterMovement : MonoBehaviour {
         orientation = Input.GetAxisRaw("Horizontal");
         if (_wCheck.touchesRWall) orientation = Mathf.Clamp(orientation, -1, 0);
         else if (_wCheck.touchesLWall) orientation = Mathf.Clamp(orientation, 0, 1);
-        speedCalc = transform.right * speed * orientation;
+        speedCalc = (transform.right * speed * orientation) * Time.deltaTime * 100;
 
         if (!_gCheck.isGrounded)
         {
