@@ -8,5 +8,7 @@ public class PickupFan : PickupBase {
 
     protected override void Pick() {
         FindObjectOfType<VariableManager>().SetFan(index);
+        
+        base.Pick();
     }
 }
