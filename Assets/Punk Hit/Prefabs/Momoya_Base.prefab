@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"spotDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXDestra","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXSinistra","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"spotDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXDestra","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXSinistra","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2573489680781261275}
     - {fileID: 2573489680887388592}
@@ -216,7 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447730be9931dbe44a6db07c25dfd956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 0
   timeToRespawn: 0
 --- !u!65 &6774820810298114737
 BoxCollider:
