@@ -10,7 +10,7 @@ public class SpawnManager : MonoBehaviour
     
     void Start()
     {
-        if (checkPoint == null) FindObjectOfType<CheckPoint>();
+        if (checkPoint == null) checkPoint = FindObjectOfType<CheckPoint>().transform;
         player = GameObject.FindWithTag("Player");
         SetPlayerPosition();
     }
