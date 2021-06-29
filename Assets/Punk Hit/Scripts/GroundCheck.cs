@@ -14,10 +14,12 @@ public class GroundCheck : MonoBehaviour {
 
     void Update() {
         RaycastHit rayHit;
-        if (Physics.Raycast(transform.position, -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma" ||
-            Physics.Raycast(transform.position + new Vector3(0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma" ||
-            Physics.Raycast(transform.position + new Vector3(-0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma") { 
-            isGrounded = true;
+        if (Physics.Raycast(transform.position, -Vector3.up, out rayHit, distanceToGround + 0.1f) ||
+            Physics.Raycast(transform.position + new Vector3(0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f) ||
+            Physics.Raycast(transform.position + new Vector3(-0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f)) {
+            isGrounded = rayHit.transform.CompareTag("Piattaforma") ||
+                         rayHit.transform.CompareTag("Spingibile") ||
+                         rayHit.transform.CompareTag("Distruggibile");
         } else {
             isGrounded = false;
             //Debug.Log("air");
