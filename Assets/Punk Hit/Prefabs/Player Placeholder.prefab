@@ -295,8 +295,8 @@ MonoBehaviour:
   soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
   soundWaveLightVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
   soundWaveSpecialVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
-  cooldownTime: 0.8
-  spawnDelay: 0.75
+  cooldownTime: 0.1
+  spawnDelay: 0.01
 --- !u!81 &3749661928883034292
 AudioListener:
   m_ObjectHideFlags: 0
