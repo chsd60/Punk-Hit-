@@ -12,16 +12,17 @@ public class DisableWallMovement : MonoBehaviour {
         distanceToWall = GetComponent<Collider>().bounds.extents.x + 0.1f;
     }
 
-    void FixedUpdate() {
-        if (Physics.Raycast(transform.position, Vector3.right, distanceToWall) ||
-            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), Vector3.right, distanceToWall) ||
-            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), Vector3.right, distanceToWall)) {
+   void FixedUpdate() {
+        RaycastHit rayHit;
+        if (Physics.Raycast(transform.position, Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma" ||
+            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma" ||
+            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma") {
             touchesRWall = true;
         } else touchesRWall = false;
-
-        if (Physics.Raycast(transform.position, -Vector3.right, distanceToWall) || 
-            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), -Vector3.right, distanceToWall) || 
-            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), -Vector3.right, distanceToWall)) {
+        
+        if (Physics.Raycast(transform.position, -Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma" || 
+            Physics.Raycast(transform.position + new Vector3(0, 0.5f, 0), -Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma" || 
+            Physics.Raycast(transform.position + new Vector3(0, -0.5f, 0), -Vector3.right, out rayHit, distanceToWall) && rayHit.transform.tag == "Piattaforma") {
             touchesLWall = true;
         } else touchesLWall = false;
     }

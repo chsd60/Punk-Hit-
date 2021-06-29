@@ -7,8 +7,22 @@ public class Flip : MonoBehaviour {
     public GameObject skins;
     public bool isFlipped = true;
 
+    private VariableManager _varMgr;
 
-    void Update() {
+    public void Start() {
+        StartCoroutine("Init");
+    }
+
+    IEnumerator Init()
+    {
+        yield return new WaitForEndOfFrame();
+        _varMgr = FindObjectOfType<VariableManager>();
+    }
+
+
+    void Update()
+    {
+        if (_varMgr == null || _varMgr.GetGamePaused()) return;
         if (Input.GetAxis("Horizontal") > 0 && isFlipped) {
             isFlipped = false;
 

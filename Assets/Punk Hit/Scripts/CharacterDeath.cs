@@ -5,31 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class CharacterDeath : MonoBehaviour {
 
-    // Dovrebbe andare riscritto in futuro, per renderlo pi˘ "pulito". Caricare tutta la scena di nuovo ricarica anche BGM e tutto il resto.
+    // Dovrebbe andare riscritto in futuro, per renderlo pi√π "pulito". Caricare tutta la scena di nuovo ricarica anche BGM e tutto il resto.
 
     // Respawn = Numero di scena corrente
-    public int currentScene;
-    //timeToDeath indica dopo quanto il giocatore rispawner‡
+//    public int currentScene;
+    //timeToDeath indica dopo quanto il giocatore rispawner√†
     public float timeToRespawn;
 
+    private SpawnManager _sm;
+    
     void Start() {
-        currentScene = SceneManager.GetActiveScene().buildIndex;
+ //       currentScene = SceneManager.GetActiveScene().buildIndex;
+        _sm = FindObjectOfType<SpawnManager>();
     }
     // Se il giocatore tocca il nemico, parte la coroutine
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
             StartCoroutine(DeadPlayer());
-            Debug.Log("Dentro");
+    //        Debug.Log("Dentro");
         }
     }
 
     // Disattiva il game object del giocatore, e dopo due secondi ricarica la scena.
-    // Probabilmente andr‡ cambiato.
+    // Probabilmente andr√† cambiato.
     IEnumerator DeadPlayer() {
 
-        //La riga seguente servir‡ per quando verr‡ migliorato il sistema di respawn in futuro
+        //La riga seguente servir√† per quando verr√† migliorato il sistema di respawn in futuro
         // GameObject.Find("Player").GetComponent<PlayerMovement>().Death();
         yield return new WaitForSeconds(timeToRespawn);
-        SceneManager.LoadScene(currentScene);
+        _sm.SetPlayerPosition();
+   //     SceneManager.LoadScene(currentScene);
     }
 }

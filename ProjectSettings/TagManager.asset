@@ -8,6 +8,8 @@ TagManager:
   - Distruggibile
   - Onda Media
   - Spingibile
+  - Chit Pesante
+  - Piattaforma
   layers:
   - Default
   - TransparentFX
@@ -17,11 +19,11 @@ TagManager:
   - UI
   - Player
   - Onda Sonora
-  - 
+  - Momoya
   - 
   - 
   - VFX
-  - 
+  - Spingibile
   - 
   - 
   - 

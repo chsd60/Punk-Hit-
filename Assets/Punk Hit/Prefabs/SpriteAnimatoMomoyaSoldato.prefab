@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672073618952362}
   - component: {fileID: 4286672073618952361}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: avanbraccio + pugnio destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,9 +258,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4286672073898636223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteAnimatoMomoyaSoldato
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -290,7 +290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074135765387}
   - component: {fileID: 4286672074135765386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: braccio destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074155232465}
   - component: {fileID: 4286672074155232464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: occhi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -457,7 +457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074428630699}
   - component: {fileID: 4286672074428630698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba destra 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -541,7 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074487317684}
   - component: {fileID: 4286672074487317691}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scarpa sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,7 +624,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074674099286}
   - component: {fileID: 4286672074674099285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: orecchio destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074710797635}
   - component: {fileID: 4286672074710797634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: scarpa destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074767848996}
   - component: {fileID: 4286672074767849003}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba destra 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -874,7 +874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074975108551}
   - component: {fileID: 4286672074975108550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: braccio sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672074979695904}
   - component: {fileID: 4286672074979695911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: avanbraccio + pugnio sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672075045570479}
   - component: {fileID: 4286672075045570478}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: orecchio sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672075148923436}
   - component: {fileID: 4286672075148923443}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba sinistra 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672075198741952}
   - component: {fileID: 4239566444907078757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SpriteMomoyaSoldato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1259,7 +1259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672075533082732}
   - component: {fileID: 4286672075533082739}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: testa vuoto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1351,7 +1351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4286672075616854267}
   - component: {fileID: 4286672075616854266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gamba sinistra 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

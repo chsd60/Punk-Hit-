@@ -24,15 +24,37 @@ public class GenerateWaves : MonoBehaviour {
     public GameObject soundWaveSpecialVfx;
 
     public float cooldownTime = .8f;
+    public float spawnDelay = .3f;
 
     private bool canShoot = true;
 
     private VariableManager _varMgr;
-    void Start() {
-        _varMgr = FindObjectOfType<VariableManager>();
+
+    private Animator _animator;
+
+    public void Start() {
+        StartCoroutine("Init");
     }
 
-    void FixedUpdate() {
+    IEnumerator Init()
+    {
+        yield return new WaitForEndOfFrame();
+        _varMgr = FindObjectOfType<VariableManager>();
+        _animator = GetComponentInChildren<Animator>();
+    }
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Fire1") && canShoot) {
+            canShoot = false;
+            flipped = flipScript.isFlipped;
+            Invoke("DelayedSpawn", spawnDelay);
+        }
+    }
+
+    private void DelayedSpawn()
+    {
+        if (_varMgr == null || _varMgr.GetGamePaused()) return;
         GameObject soundWave;
         GameObject soundWaveVfx;
         switch (_varMgr.GetSelectedGuitar()) {
@@ -53,19 +75,16 @@ public class GenerateWaves : MonoBehaviour {
                 soundWaveVfx = soundWaveNormalVfx;
                 break;
         }
-        
-        if (Input.GetButtonDown("Fire1") && canShoot) {
-            canShoot = false;
-            flipped = flipScript.isFlipped;
-            if (!flipped) {
-                GameObject ondaSonora = Instantiate(soundWave, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
-                GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
-            } else if (flipped) {
-                GameObject ondaSonora = Instantiate(soundWave, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
-                GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
-            }
-            Invoke("ReactivateGuitar", cooldownTime);
+
+        if (!flipped) {
+            GameObject ondaSonora = Instantiate(soundWave, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
+            GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
+        } else if (flipped) {
+            GameObject ondaSonora = Instantiate(soundWave, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
+            GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
         }
+        _animator.SetTrigger("Schitarrata");
+        Invoke("ReactivateGuitar", cooldownTime);
     }
 
     private void ReactivateGuitar() {
