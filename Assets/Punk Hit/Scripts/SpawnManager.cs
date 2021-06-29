@@ -10,6 +10,12 @@ public class SpawnManager : MonoBehaviour
     
     void Start()
     {
+        StartCoroutine("Init");
+    }
+
+    IEnumerator Init()
+    {
+        yield return new WaitForSeconds(.1f);
         if (checkPoint == null) checkPoint = FindObjectOfType<CheckPoint>().transform;
         player = GameObject.FindWithTag("Player");
         SetPlayerPosition();

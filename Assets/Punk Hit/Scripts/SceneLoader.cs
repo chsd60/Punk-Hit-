@@ -7,6 +7,6 @@ public class SceneLoader : MonoBehaviour {
 
     [SerializeField] private Scenes sceneToLoad;
     public void LoadNextScene() {
-        SceneManager.LoadScene(sceneToLoad.ToString(), LoadSceneMode.Single);
+        SceneManager.LoadScene("Livello Antonio");
     }
 }

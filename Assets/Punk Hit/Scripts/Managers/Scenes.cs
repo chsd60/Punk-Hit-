@@ -1,5 +1,5 @@
 public enum Scenes {
-    Movimento,
-    Livello01,
-    Menu
+    Menu = 0,
+    Livello01 = 1,
+    
 }
