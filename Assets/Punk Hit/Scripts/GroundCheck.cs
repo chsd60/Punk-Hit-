@@ -13,9 +13,10 @@ public class GroundCheck : MonoBehaviour {
     }
 
     void Update() {
-        if (Physics.Raycast(transform.position, -Vector3.up, distanceToGround + 0.1f) ||
-            Physics.Raycast(transform.position + new Vector3(0.5f, 0, 0), -Vector3.up, distanceToGround + 0.1f) ||
-            Physics.Raycast(transform.position + new Vector3(-0.5f, 0, 0), -Vector3.up, distanceToGround + 0.1f)) {
+        RaycastHit rayHit;
+        if (Physics.Raycast(transform.position, -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma" ||
+            Physics.Raycast(transform.position + new Vector3(0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma" ||
+            Physics.Raycast(transform.position + new Vector3(-0.5f, 0, 0), -Vector3.up, out rayHit, distanceToGround + 0.1f) && rayHit.transform.tag == "Piattaforma") { 
             isGrounded = true;
         } else {
             isGrounded = false;
