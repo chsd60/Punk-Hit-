@@ -132,6 +132,7 @@ Transform:
   m_Children:
   - {fileID: 2573489679583058953}
   - {fileID: 6420866313292923253}
+  - {fileID: 3924836759406943738}
   m_Father: {fileID: 2573489679507499488}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,11 +165,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"player","value":null,"$version":"A"},{"name":"spotDistance","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"regularSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"attackSpeed","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"player","value":null,"$version":"A"},{"name":"spotDistance","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"regularSpeed","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"attackSpeed","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXSinistra","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2573489680781261275}
     - {fileID: 2573489680887388592}
     - {fileID: 2116873568366487635}
+    - {fileID: 6542093800730256215}
 --- !u!114 &2573489679593203091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +319,37 @@ Transform:
   m_Father: {fileID: 2573489679507499488}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6542093800730256215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3924836759406943738}
+  m_Layer: 0
+  m_Name: PolvereSinistra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3924836759406943738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542093800730256215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: -1.9, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8280242527715368552}
+  m_Father: {fileID: 2573489679593203088}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3440823100315196887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -462,10 +495,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4286672075533082739, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57990fd7c28e5bb4bbcaedfd5db8ad48, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
 --- !u!4 &7558875633464082635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4286672073898636223, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
   m_PrefabInstance: {fileID: 6024642972470686580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8609332765509183875
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3924836759406943738}
+    m_Modifications:
+    - target: {fileID: 401711230827427812, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_Name
+      value: Polvere Camminata
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+--- !u!4 &8280242527715368552 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+  m_PrefabInstance: {fileID: 8609332765509183875}
   m_PrefabAsset: {fileID: 0}
