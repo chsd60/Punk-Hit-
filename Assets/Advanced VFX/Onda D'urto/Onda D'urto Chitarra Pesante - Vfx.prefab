@@ -4817,7 +4817,7 @@ GameObject:
   - component: {fileID: 3647594852818116842}
   - component: {fileID: -8755193577370411450}
   m_Layer: 0
-  m_Name: Onda D'urto Chitarra Pesante 1
+  m_Name: Onda D'urto Chitarra Pesante - Vfx
   m_TagString: Chit Pesante
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14486,7 +14486,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2311686146898545257
 Transform:
   m_ObjectHideFlags: 0
