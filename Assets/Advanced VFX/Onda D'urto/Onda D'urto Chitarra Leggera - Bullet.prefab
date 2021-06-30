@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6064774666117720387}
   - component: {fileID: 3406185229678943752}
   - component: {fileID: 8650665605264777365}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4816,7 +4816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3770200593292781186}
   - component: {fileID: -3146909533635627551}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Onda D'urto Chitarra Leggera - Bullet
   m_TagString: Chit Pesante
   m_Icon: {fileID: 0}
@@ -4868,7 +4868,7 @@ GameObject:
   - component: {fileID: 8229662176923151510}
   - component: {fileID: 1490128215462172211}
   - component: {fileID: 5098714394987606982}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9674,7 +9674,7 @@ GameObject:
   - component: {fileID: 3191116433343647239}
   - component: {fileID: 423805945291003267}
   - component: {fileID: 8305689923569850061}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14480,7 +14480,7 @@ GameObject:
   - component: {fileID: 2799109257352367105}
   - component: {fileID: 7093445358611601435}
   - component: {fileID: 7288153726911660348}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19345,7 +19345,7 @@ GameObject:
   - component: {fileID: 8325129539350120857}
   - component: {fileID: 4302326935049465335}
   - component: {fileID: 6571396626329645434}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
