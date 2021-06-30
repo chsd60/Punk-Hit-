@@ -32,6 +32,8 @@ public class UIManager : MonoBehaviour {
     public Sprite vinilePlat;
     public Sprite vinileDiam;
 
+    public Image[] listaFan;
+
     public void Start() {
         Invoke("UpdateDisc", 0);
     }
@@ -45,7 +47,16 @@ public class UIManager : MonoBehaviour {
         noteUI.text = "Note: " + note;
     }
 
-    //public void UpdateFans()
+    public void UpdateFan(bool[] pickedFan) {
+
+        for (int i = 0; i < pickedFan.Length; i++) {
+            if (pickedFan[i]) {
+                listaFan[i].color = Color.white;
+            } else {
+                listaFan[i].color = Color.black;
+            }
+        }
+    }
 
     public void UpdateGuitar(GuitarTypes type) {
         switch (type) {
