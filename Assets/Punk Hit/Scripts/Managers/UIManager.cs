@@ -73,7 +73,7 @@ public class UIManager : MonoBehaviour {
                 break;
         }
 
-        Debug.Log("Chitarra Selezionata: " + type);
+//        Debug.Log("Chitarra Selezionata: " + type);
     }
 
     public void UpdateDisc() {
