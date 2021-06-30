@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour {
 
-    [SerializeField] private Scenes sceneToLoad;
+    [SerializeField] private int sceneToLoad;
     public void LoadNextScene() {
-        SceneManager.LoadScene("Livello Antonio");
+        SceneManager.LoadScene(sceneToLoad, LoadSceneMode.Single);
     }
 }
