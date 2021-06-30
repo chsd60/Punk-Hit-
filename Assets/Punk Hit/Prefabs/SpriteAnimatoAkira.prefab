@@ -1033,96 +1033,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4035252290323531804}
-  - {fileID: 6855525218142478203}
   - {fileID: 6855525219025229832}
   - {fileID: 6855525219623501203}
   - {fileID: 6855525219069155939}
   m_Father: {fileID: 6855525218972236303}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6855525218142478202
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6855525218142478203}
-  - component: {fileID: 6855525218142477956}
-  m_Layer: 0
-  m_Name: chitarra Pesante
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6855525218142478203
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6855525218142478202}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -2, z: 0}
-  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
-  m_Children: []
-  m_Father: {fileID: 6855525217897626767}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6855525218142477956
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6855525218142478202}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 40
-  m_Sprite: {fileID: 21300000, guid: 39744dcac2288a348814b7807ac7d7a7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &6855525218532670813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,9 +1269,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.05, y: -1.95, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
-  m_Children: []
+  m_Children:
+  - {fileID: 343178293124411201}
   m_Father: {fileID: 6855525217897626767}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6855525219025229833
 SpriteRenderer:
@@ -1364,7 +1281,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6855525219025229839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1420,7 +1337,7 @@ GameObject:
   - component: {fileID: 6855525219069155939}
   - component: {fileID: 6855525219069155948}
   m_Layer: 0
-  m_Name: chitarra 2
+  m_Name: Chitarra Media
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1436,9 +1353,10 @@ Transform:
   m_LocalRotation: {x: -0.0012742272, y: 0.000119157885, z: -0.0070073428, w: 0.99997467}
   m_LocalPosition: {x: -0.38, y: -2.55, z: 0.01}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
-  m_Children: []
+  m_Children:
+  - {fileID: 1108052182103356156}
   m_Father: {fileID: 6855525217897626767}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -0.146, y: 0.015, z: -0.803}
 --- !u!212 &6855525219069155948
 SpriteRenderer:
@@ -1447,7 +1365,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6855525219069155938}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1554,12 +1472,12 @@ GameObject:
   - component: {fileID: 6855525219623501203}
   - component: {fileID: 6855525219623501212}
   m_Layer: 0
-  m_Name: chitarra Segreta
+  m_Name: Chitarra Segreta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6855525219623501203
 Transform:
   m_ObjectHideFlags: 0
@@ -1570,9 +1488,10 @@ Transform:
   m_LocalRotation: {x: -0.0024945273, y: -0.0016595139, z: 0.00031680232, w: 0.99999547}
   m_LocalPosition: {x: 0.11, y: -1.86, z: 0}
   m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
-  m_Children: []
+  m_Children:
+  - {fileID: 5318053730885424272}
   m_Father: {fileID: 6855525217897626767}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -0.286, y: -0.19, z: 0.037}
 --- !u!212 &6855525219623501212
 SpriteRenderer:
@@ -1581,7 +1500,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6855525219623501202}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1961,6 +1880,166 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &788505812155078202
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6855525219025229832}
+    m_Modifications:
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3833070479568472749, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_Name
+      value: Green (Leggero) 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809704, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420871024646809705, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 40
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+--- !u!4 &343178293124411201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1022988973466433915, guid: 1be926d52a0e42f4f8f4d084e6a4103e, type: 3}
+  m_PrefabInstance: {fileID: 788505812155078202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2262657212329614695
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6855525219623501203}
+    m_Modifications:
+    - target: {fileID: 1944583854773164580, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_Name
+      value: Chitarra Segreta (Star)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5986648282380685523, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_SortingOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+--- !u!4 &5318053730885424272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6245110658128153079, guid: a90145d20b3249340ad769c5225175ec, type: 3}
+  m_PrefabInstance: {fileID: 2262657212329614695}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2803384842873824840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2102,4 +2181,70 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2226897238698077780, guid: 227541901dd51dd4cabdc1a0f0c80c30, type: 3}
   m_PrefabInstance: {fileID: 2803384842873824840}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4007358163153334450
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6855525219069155939}
+    m_Modifications:
+    - target: {fileID: 4100765232643417274, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_Name
+      value: Electric Guitar
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076070609331422617, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 40
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+--- !u!4 &1108052182103356156 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4106271939622453838, guid: 93fd80b0a1d2f2a4d91acef601422c9b, type: 3}
+  m_PrefabInstance: {fileID: 4007358163153334450}
   m_PrefabAsset: {fileID: 0}
