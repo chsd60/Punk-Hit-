@@ -80,7 +80,6 @@ GameObject:
   - component: {fileID: 4353160156433994401}
   - component: {fileID: 6369637201140627895}
   - component: {fileID: 2061159288875187196}
-  - component: {fileID: 3749661928883034292}
   m_Layer: 6
   m_Name: Player Placeholder
   m_TagString: Player
@@ -297,14 +296,6 @@ MonoBehaviour:
   soundWaveSpecialVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
   cooldownTime: 0.1
   spawnDelay: 0.01
---- !u!81 &3749661928883034292
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2343469776453614355}
-  m_Enabled: 1
 --- !u!1 &5080325168506814915
 GameObject:
   m_ObjectHideFlags: 0
