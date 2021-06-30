@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4248032553315488601}
   - component: {fileID: 814845760982175183}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Onda D'urto Segreto - Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 2892526599691191126}
   - component: {fileID: 9150225531245949901}
   - component: {fileID: 6881993490967368620}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4868,7 +4868,7 @@ GameObject:
   - component: {fileID: 2508073376270052972}
   - component: {fileID: 2064932427486998812}
   - component: {fileID: 3536600437654064123}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9674,7 +9674,7 @@ GameObject:
   - component: {fileID: 2729769535548326633}
   - component: {fileID: 2581220879837598360}
   - component: {fileID: 4167659649076139808}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14480,7 +14480,7 @@ GameObject:
   - component: {fileID: 4078291927449528870}
   - component: {fileID: 5894885265729425702}
   - component: {fileID: 1021764040658169253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Electric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19345,7 +19345,7 @@ GameObject:
   - component: {fileID: 2700535582889754290}
   - component: {fileID: 5625229575523504108}
   - component: {fileID: 6988824883586771280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Star 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
