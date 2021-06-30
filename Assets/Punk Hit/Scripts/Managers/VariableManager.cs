@@ -22,6 +22,7 @@ public class VariableManager : MonoBehaviour {
         
         AddGuitar(GuitarTypes.Media);
         uiManager.UpdateGuitar(GetSelectedGuitar());
+        uiManager.UpdateFan(GetFanArray());
     }
 
     //Punti
@@ -76,6 +77,7 @@ public class VariableManager : MonoBehaviour {
 
     public void SetFan(int index, bool value = true) {
         sceneVariables.declarations.Get<List<bool>>("listaFan")[index] = value;
+        uiManager.UpdateFan(GetFanArray());
     }
     
     //Chitarre
