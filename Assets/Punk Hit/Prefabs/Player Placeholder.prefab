@@ -290,10 +290,10 @@ MonoBehaviour:
   soundWaveHeavy: {fileID: 583483976127380302, guid: e70a49b207a16ee4b8cf2d946a0f45a6, type: 3}
   soundWaveLight: {fileID: 583483976127380302, guid: 07b47039aaf31bd4fbb6dfab39105528, type: 3}
   soundWaveSpecial: {fileID: 583483976127380302, guid: 1a9c378745ca62a40abd965b3479946a, type: 3}
-  soundWaveNormalVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
-  soundWaveHeavyVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
-  soundWaveLightVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
-  soundWaveSpecialVfx: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
+  soundWaveNormalVfx: {fileID: 3263778818046040351, guid: 1c17b0813b64852498e2d2e55c079125, type: 3}
+  soundWaveHeavyVfx: {fileID: 3647594852818116855, guid: f4215e4b929d9bb4aa4807be4245a772, type: 3}
+  soundWaveLightVfx: {fileID: 3770200593292781215, guid: dd1ef83e7a19dca40b0dd52e6f6e539a, type: 3}
+  soundWaveSpecialVfx: {fileID: 868178142242091371, guid: 924f489f75a67244bb9997b4f7d81f24, type: 3}
   cooldownTime: 0.1
   spawnDelay: 0.01
 --- !u!1 &5080325168506814915
