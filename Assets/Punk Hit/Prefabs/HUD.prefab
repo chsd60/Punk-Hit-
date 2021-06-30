@@ -2761,6 +2761,15 @@ MonoBehaviour:
   vinileOro: {fileID: 21300000, guid: 344b9c3f759650f4681bec1e808db873, type: 3}
   vinilePlat: {fileID: 21300000, guid: 347da9405290d514b88a14238b5cf1ec, type: 3}
   vinileDiam: {fileID: 21300000, guid: 63990b91061ac1540bc283b52b781278, type: 3}
+  listaFan:
+  - {fileID: 316044498080413745}
+  - {fileID: 3769875398248475153}
+  - {fileID: 9163463121972545050}
+  - {fileID: 6663501845960416846}
+  - {fileID: 4031943180513613110}
+  - {fileID: 7600151933132060971}
+  - {fileID: 3553930935917287986}
+  - {fileID: 5250229302925519771}
 --- !u!114 &1176659274
 MonoBehaviour:
   m_ObjectHideFlags: 0
