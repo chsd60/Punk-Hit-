@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6420866313292923253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StunVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679507499488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Momoya_Soldato
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489679583058953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 6774820810298114737}
   - component: {fileID: 8184252173111081577}
   - component: {fileID: 4907400792078417690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447730be9931dbe44a6db07c25dfd956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 0
   timeToRespawn: 0
 --- !u!65 &6774820810298114737
 BoxCollider:
@@ -268,7 +267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680781261275}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -298,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2573489680887388592}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -328,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3924836759406943738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PolvereSinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,6 +359,10 @@ PrefabInstance:
     - target: {fileID: 292040643381543951, guid: 42e15009df933644a894239e740edcbb, type: 3}
       propertyPath: m_Name
       value: Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 292040643381543951, guid: 42e15009df933644a894239e740edcbb, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 292040643381543951, guid: 42e15009df933644a894239e740edcbb, type: 3}
       propertyPath: m_IsActive
@@ -421,6 +424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7030014846520184962, guid: 42e15009df933644a894239e740edcbb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42e15009df933644a894239e740edcbb, type: 3}
 --- !u!4 &8329637749231345969 stripped
@@ -435,6 +442,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2573489679583058953}
     m_Modifications:
+    - target: {fileID: 1410665543554259408, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494269174394651636, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4286672073898636216, guid: 6a0bc6a431c06c14fbaa315f8e7f1114, type: 3}
       propertyPath: m_Name
       value: SpriteAnimatoMomoyaSoldato
@@ -517,6 +532,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Polvere Camminata
       objectReference: {fileID: 0}
+    - target: {fileID: 401711230827427812, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -560,6 +579,14 @@ PrefabInstance:
     - target: {fileID: 401711230827427819, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4868469203492724196, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405186487293705935, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9db79b5afb1f13040a1d244a6ea7815e, type: 3}
