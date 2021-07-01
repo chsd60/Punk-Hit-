@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5562891742648653507}
   - component: {fileID: 3917014122269041032}
   - component: {fileID: 6995324374996082453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4817,7 +4817,7 @@ GameObject:
   - component: {fileID: 7722713322214265622}
   - component: {fileID: 987637744175032755}
   - component: {fileID: 6907239000043605062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9623,7 +9623,7 @@ GameObject:
   - component: {fileID: 3841618315238109575}
   - component: {fileID: 2087591871537621507}
   - component: {fileID: 7663587278510811469}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14428,9 +14428,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3263778818046040322}
   - component: {fileID: 7743240715260552113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Onda D'urto V3 - Bullet
-  m_TagString: Untagged
+  m_TagString: Onda Media
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14480,7 +14480,7 @@ GameObject:
   - component: {fileID: 4594054207816086401}
   - component: {fileID: 8892865458840725403}
   - component: {fileID: 8952467556312596156}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Electric
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19345,7 +19345,7 @@ GameObject:
   - component: {fileID: 7679193481363437081}
   - component: {fileID: 2498894648165864055}
   - component: {fileID: 4768043813525442298}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thunder 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
