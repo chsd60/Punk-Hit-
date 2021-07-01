@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3493652539047092953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: StunVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8538213199631402405}
   - component: {fileID: 9062694638008107265}
   - component: {fileID: 6212711155249751407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RaggioTraente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5978502021248249511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_2
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5978502021341269708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Waypoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
@@ -184,7 +184,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5978502022082879223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Momoya_Volante
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 7598289447371465481}
   - component: {fileID: 6309005289410044363}
   - component: {fileID: 4360405313193931294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 447730be9931dbe44a6db07c25dfd956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScene: 0
   timeToRespawn: 0
 --- !u!135 &4360405313193931294
 SphereCollider:
@@ -367,7 +366,7 @@ GameObject:
   - component: {fileID: 5978502022292794142}
   - component: {fileID: 8237712653155821995}
   - component: {fileID: 2170519994220430458}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyUFO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8386899541246348926}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3587062014070477806}
   - component: {fileID: 3401468984085364435}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: alieno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 468545531856308951}
   - component: {fileID: 4025628970586992529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8786296209427482048}
   - component: {fileID: 2259205305829657187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ColliderRaggioTraente
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -641,7 +640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1315474557328929215}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemySprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -670,6 +669,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8538213199631402405}
     m_Modifications:
+    - target: {fileID: 429496679152759943, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 805639303534624100, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -718,6 +721,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TractorBeam
       objectReference: {fileID: 0}
+    - target: {fileID: 805639303534624101, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 805639305253791761, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 805639305268671133, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba2713f3382b8a446b9c24e1b2a913e5, type: 3}
 --- !u!4 &4130430473687515468 stripped
@@ -735,6 +750,10 @@ PrefabInstance:
     - target: {fileID: 292040643381543951, guid: 42e15009df933644a894239e740edcbb, type: 3}
       propertyPath: m_Name
       value: Star
+      objectReference: {fileID: 0}
+    - target: {fileID: 292040643381543951, guid: 42e15009df933644a894239e740edcbb, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6654230110593400038, guid: 42e15009df933644a894239e740edcbb, type: 3}
       propertyPath: m_RootOrder
@@ -780,6 +799,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7030014846520184962, guid: 42e15009df933644a894239e740edcbb, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42e15009df933644a894239e740edcbb, type: 3}
 --- !u!4 &1832302061138450867 stripped
@@ -797,6 +820,38 @@ PrefabInstance:
     - target: {fileID: 749523239259144562, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
       propertyPath: m_Name
       value: UFO
+      objectReference: {fileID: 0}
+    - target: {fileID: 749523239259144562, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1341526354413859676, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1575176381610117705, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2218505661499893923, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3016727942615399628, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3603310731204762146, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698747199972078621, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4329638003230886820, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4997063583754672718, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
       propertyPath: m_RootOrder
@@ -841,6 +896,14 @@ PrefabInstance:
     - target: {fileID: 4997063583754672718, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697501323233753758, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7022952267073064044, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 273ae237d3628cd40bd92a5dd552164d, type: 3}
