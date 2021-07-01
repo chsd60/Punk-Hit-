@@ -5,10 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterDeath : MonoBehaviour {
 
-    // Dovrebbe andare riscritto in futuro, per renderlo più "pulito". Caricare tutta la scena di nuovo ricarica anche BGM e tutto il resto.
-
     // Respawn = Numero di scena corrente
-//    public int currentScene;
     //timeToDeath indica dopo quanto il giocatore rispawnerà
     public float timeToRespawn;
 
@@ -34,6 +31,5 @@ public class CharacterDeath : MonoBehaviour {
         // GameObject.Find("Player").GetComponent<PlayerMovement>().Death();
         yield return new WaitForSeconds(timeToRespawn);
         _sm.SetPlayerPosition();
-   //     SceneManager.LoadScene(currentScene);
     }
 }
