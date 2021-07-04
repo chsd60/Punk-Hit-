@@ -9,7 +9,6 @@ public class MenuManager : MonoBehaviour {
     private VariableManager _varMgr;
     
     public void Start() {
-        Time.timeScale = 1;
         StartCoroutine("Init");
     }
 
