@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7181486913855928352}
   - component: {fileID: 7181486913855928353}
   m_Layer: 9
-  m_Name: FanBlu
+  m_Name: Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,8 +180,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3.3286433, z: 1.0282495}
-  m_Center: {x: 0, y: 0.96524024, z: -0.014124751}
+  m_Size: {x: 1, y: 3.312759, z: 1.0282495}
+  m_Center: {x: 0, y: 0.9572983, z: -0.014124751}
 --- !u!114 &7181486913855928353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
   tags:
   - Player
   - Onda Media
-  spawnedPrefab: {fileID: 7715908627946621255, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+  spawnedPrefab: {fileID: 0}
   points: 0
   index: 0
 --- !u!1001 &254456287835861898
