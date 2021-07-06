@@ -30,8 +30,11 @@ public class CharacterDeath : MonoBehaviour {
     // Fa rispawnare il giocatore
     IEnumerator DeadPlayer() {
         AudioClip audio = sfxMorte;
-        source.clip = audio;
-        source.Play();
+        if (source != null)
+        {
+            source.clip = audio;
+            source.Play();
+        }
         //piglia transform giocatore, spawna vfx in quel punto
         yield return new WaitForSeconds(timeToRespawn);
         _sm.SetPlayerPosition();
