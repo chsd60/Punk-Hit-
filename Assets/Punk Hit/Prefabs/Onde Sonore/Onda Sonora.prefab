@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2392899701487649594}
   - component: {fileID: 9044506499903156296}
   - component: {fileID: 7818975449586621575}
-  - component: {fileID: 9013105672719578625}
   - component: {fileID: 8209505421388342029}
   - component: {fileID: -2398522105451553605}
+  - component: {fileID: 3586584811762932868}
   m_Layer: 7
   m_Name: Onda Sonora
   m_TagString: Onda Media
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &9013105672719578625
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 583483976127380302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 1.5
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!54 &8209505421388342029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -131,6 +117,19 @@ MonoBehaviour:
   ondaSonora: {fileID: 583483976127380302}
   waveSpeed: 400
   fineOnda: 0.5
+--- !u!65 &3586584811762932868
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583483976127380302}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1734738, y: 1.3278315, z: 1.0000002}
+  m_Center: {x: 1.0867369, y: 0.097661376, z: -0.00000011920929}
 --- !u!1001 &4626304464711233562
 PrefabInstance:
   m_ObjectHideFlags: 0
