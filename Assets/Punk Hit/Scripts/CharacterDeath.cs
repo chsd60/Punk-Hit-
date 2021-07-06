@@ -10,6 +10,10 @@ public class CharacterDeath : MonoBehaviour {
     public float timeToRespawn;
 
     private SpawnManager _sm;
+
+    public AudioClip sfxMorte;
+    public AudioSource source;
+    public GameObject vfxMorte;
     
     void Start() {
  //       currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -23,12 +27,12 @@ public class CharacterDeath : MonoBehaviour {
         }
     }
 
-    // Disattiva il game object del giocatore, e dopo due secondi ricarica la scena.
-    // Probabilmente andrà cambiato.
+    // Fa rispawnare il giocatore
     IEnumerator DeadPlayer() {
-
-        //La riga seguente servirà per quando verrà migliorato il sistema di respawn in futuro
-        // GameObject.Find("Player").GetComponent<PlayerMovement>().Death();
+        AudioClip audio = sfxMorte;
+        source.clip = audio;
+        source.Play();
+        //piglia transform giocatore, spawna vfx in quel punto
         yield return new WaitForSeconds(timeToRespawn);
         _sm.SetPlayerPosition();
     }

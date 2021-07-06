@@ -306,6 +306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2289710683201240906, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6855525218972236302, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
       propertyPath: m_Name
       value: SpriteAnimatoAkira
@@ -358,5 +362,123 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6855525219623501202, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2f4ad940169f3246b43c405796e7f50, type: 3}
+--- !u!1001 &240918296176284522
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114616267344421392, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704748543634228046, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+      propertyPath: m_Name
+      value: FanSalvoRosso
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: afbeca5528804e34885a10ff5dcdfb9e, type: 3}
+--- !u!1001 &6410948407824310878
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3497686159065973698, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7715908627946621255, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
+      propertyPath: m_Name
+      value: FanSalvoBlu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a4de9205a95bcb40a5960f900c53018, type: 3}
