@@ -31,7 +31,7 @@ public class Flip : MonoBehaviour {
             v.y = 0;
             transform.rotation = Quaternion.Euler(v);
 
-            Debug.Log("Flip!");
+//            Debug.Log("Flip!");
         } else if (Input.GetAxis("Horizontal") < 0 && isFlipped == false) {
             isFlipped = true;
 
@@ -39,7 +39,7 @@ public class Flip : MonoBehaviour {
             v.y = 180;
             transform.rotation = Quaternion.Euler(v);
 
-            Debug.Log("Unflip!");
+ //           Debug.Log("Unflip!");
         }
     }
 }
