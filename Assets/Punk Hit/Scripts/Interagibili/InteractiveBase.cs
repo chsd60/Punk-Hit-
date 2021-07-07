@@ -10,6 +10,10 @@ public class InteractiveBase : MonoBehaviour {
 
     public GameObject spawnedPrefab;
 
+    public GameObject vfxInteractive;
+    private AudioSource _as;
+    public AudioClip sfxInteractive;
+
     void Start() {
         GetComponent<Collider>().isTrigger = true;
     }
@@ -27,6 +31,11 @@ public class InteractiveBase : MonoBehaviour {
         if (spawnedPrefab != null) {
             Instantiate(spawnedPrefab, transform.position, transform.rotation);
             Destroy(this.gameObject);
+            AudioClip audio = sfxInteractive;
+            if (_as != null) {
+                _as.clip = audio;
+                _as.Play();
+            }
         }
     }
 }

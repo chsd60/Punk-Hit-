@@ -7,7 +7,11 @@ public class MenuManager : MonoBehaviour {
     public GameObject pausaUI;
 
     private VariableManager _varMgr;
-    
+
+    public AudioClip openSfx;
+    public AudioClip closeSfx;
+    public AudioSource source;
+
     public void Start() {
         StartCoroutine("Init");
     }
@@ -35,6 +39,11 @@ public class MenuManager : MonoBehaviour {
         Time.timeScale = 0;
         _varMgr.SetGamePaused(true);
         pausaUI.SetActive(true);
+        AudioClip audio = openSfx;
+        if (source != null) {
+            source.clip = audio;
+            source.Play();
+        }
     }
 
     public void CloseMenu() {
@@ -43,6 +52,11 @@ public class MenuManager : MonoBehaviour {
         Time.timeScale = 1;
         _varMgr.SetGamePaused(false);
         pausaUI.SetActive(false);
+        AudioClip audio = closeSfx;
+        if (source != null) {
+            source.clip = audio;
+            source.Play();
+        }
     }
 
     public void AttivaChiudiMenu() {

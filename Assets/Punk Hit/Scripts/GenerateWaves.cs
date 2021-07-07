@@ -23,6 +23,10 @@ public class GenerateWaves : MonoBehaviour {
     public GameObject soundWaveLightVfx;
     public GameObject soundWaveSpecialVfx;
 
+    //sfx/vfx
+    public AudioClip schitarrataSfx;
+    public AudioSource source;
+
     public float cooldownTime = .8f;
     public float spawnDelay = .3f;
 
@@ -34,6 +38,7 @@ public class GenerateWaves : MonoBehaviour {
 
     public void Start() {
         StartCoroutine("Init");
+        source = FindObjectOfType<AudioSource>();
     }
 
     IEnumerator Init()
@@ -79,9 +84,19 @@ public class GenerateWaves : MonoBehaviour {
         if (!flipped) {
             GameObject ondaSonora = Instantiate(soundWave, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
             GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerDX.transform.position, waveSpawnerDX.transform.rotation);
+            AudioClip audio = schitarrataSfx;
+            if (source != null) {
+                source.clip = audio;
+                source.Play();
+            }
         } else if (flipped) {
             GameObject ondaSonora = Instantiate(soundWave, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
             GameObject ondaSonoraVfx = Instantiate(soundWaveVfx, waveSpawnerSX.transform.position, waveSpawnerSX.transform.rotation);
+            AudioClip audio = schitarrataSfx;
+            if (source != null) {
+                source.clip = audio;
+                source.Play();
+            }
         }
         _animator.SetTrigger("Schitarrata");
         Invoke("ReactivateGuitar", cooldownTime);
