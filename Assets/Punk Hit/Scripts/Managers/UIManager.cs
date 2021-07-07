@@ -39,12 +39,12 @@ public class UIManager : MonoBehaviour {
     }
     public void UpdatePoints(int pts) {
         punti = pts;
-        puntiUI.text = "Punti: " + pts;
+        puntiUI.text = "" + pts;
         Invoke("UpdateDisc", 0);
     }
 
     public void UpdateNotes(int note) {
-        noteUI.text = "Note: " + note;
+        noteUI.text = "" + note;
     }
 
     public void UpdateFan(bool[] pickedFan) {

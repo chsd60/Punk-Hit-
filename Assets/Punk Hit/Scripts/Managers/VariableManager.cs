@@ -16,7 +16,9 @@ public class VariableManager : MonoBehaviour {
 
     private int guitarIndex = 0;
     
-    private void Start() {
+    private void Start()
+    {
+        uiManager.gameObject.SetActive(true);
         sceneVariables = GetComponent<Variables>();
         // Tramite sceneVariables.declarations ho accesso alle variabili di Visual Scripting
         

@@ -32,6 +32,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6345587066653893099}
+  - {fileID: 4902085819338367478}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,7 +114,7 @@ MonoBehaviour:
   tags:
   - Player
   - Onda Media
-  spawnedPrefab: {fileID: 0}
+  spawnedPrefab: {fileID: 5879076843362768160, guid: ea455e301c1a4aa4dac2b97db162693d, type: 3}
   points: 10
   notes: 1
 --- !u!1 &7601694085672494418
@@ -199,3 +200,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1199444520091358067
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2292493267515690109}
+    m_Modifications:
+    - target: {fileID: 4429335687875972246, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_Name
+      value: Stelle Stelline
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+--- !u!4 &4902085819338367478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6098715551007322757, guid: 1859a4a62361b724fae1591e539203e7, type: 3}
+  m_PrefabInstance: {fileID: 1199444520091358067}
+  m_PrefabAsset: {fileID: 0}
