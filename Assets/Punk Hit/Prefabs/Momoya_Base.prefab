@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"spotDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXDestra","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXSinistra","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"boxColliderTrigger","value":{"$content":5,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"boxColliderFisico","value":{"$content":6,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"waypoint1","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"waypoint2","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"speed","value":{"$content":20.0,"$type":"System.Single"},"$version":"A"},{"name":"drag","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"mass","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"},{"name":"stunned","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"spotDistance","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"stunVFX","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXDestra","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"polvereVFXSinistra","value":{"$content":4,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"boxColliderTrigger","value":{"$content":5,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"boxColliderFisico","value":{"$content":6,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"sfx","value":{"$content":7,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 2573489680781261275}
     - {fileID: 2573489680887388592}
@@ -174,6 +174,7 @@ MonoBehaviour:
     - {fileID: 5152444576615054682}
     - {fileID: 6774820810298114737}
     - {fileID: 7411899416026249861}
+    - {fileID: 8300000, guid: 0dafc54702051264f9900d7cad4fc954, type: 3}
 --- !u!114 &2573489679593203091
 MonoBehaviour:
   m_ObjectHideFlags: 0
