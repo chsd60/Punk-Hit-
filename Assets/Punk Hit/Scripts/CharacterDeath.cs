@@ -7,17 +7,19 @@ public class CharacterDeath : MonoBehaviour {
 
     // Respawn = Numero di scena corrente
     //timeToDeath indica dopo quanto il giocatore rispawnerà
-    public float timeToRespawn;
+    public float timeToRespawn = 1;
+    private Transform playerLocation;
 
     private SpawnManager _sm;
 
     public AudioClip sfxMorte;
-    public AudioSource source;
+    private AudioSource source;
     public GameObject vfxMorte;
     
     void Start() {
  //       currentScene = SceneManager.GetActiveScene().buildIndex;
         _sm = FindObjectOfType<SpawnManager>();
+        source = FindObjectOfType<AudioSource>();
     }
     // Se il giocatore tocca il nemico, parte la coroutine
     private void OnTriggerEnter(Collider other) {
@@ -35,7 +37,8 @@ public class CharacterDeath : MonoBehaviour {
             source.clip = audio;
             source.Play();
         }
-        //piglia transform giocatore, spawna vfx in quel punto
+        playerLocation = this.transform;
+        if (vfxMorte != null) Instantiate(vfxMorte, playerLocation.position, playerLocation.rotation);
         yield return new WaitForSeconds(timeToRespawn);
         _sm.SetPlayerPosition();
     }
