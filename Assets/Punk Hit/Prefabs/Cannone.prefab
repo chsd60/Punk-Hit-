@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4600730607899699495}
   - component: {fileID: 3080039940159481977}
   m_Layer: 0
-  m_Name: Interagibile (1)
+  m_Name: Cannone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactiveTags:
   - Onda Media
-  spawnedPrefab: {fileID: 0}
+  spawnedPrefab: {fileID: 427201317506107458, guid: 9869cd90e9106c643a5595afea14327e, type: 3}
+  vfxInteractive: {fileID: 0}
+  sfxInteractive: {fileID: 0}
   activateActions:
     m_PersistentCalls:
       m_Calls:
