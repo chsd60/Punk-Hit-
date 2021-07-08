@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour {
 
     //Immagini Chitarre
     public Image guitarUI;
+    public Image secretUI;
     public Sprite guitarM;
     public Sprite guitarH;
     public Sprite guitarL;
@@ -88,5 +89,11 @@ public class UIManager : MonoBehaviour {
         } else {
             vinylUI.sprite = vinile;
         }
+    }
+
+    public void ShowSecret()
+    {
+        if(secretUI != null)
+            secretUI.color = Color.white;
     }
 }
