@@ -9,5 +9,8 @@ public class PickupSecret : PickupBase
         var sc = FindObjectOfType<SkinChanger>();
         if(sc != null)
             sc.ChangeSkin();
+        FindObjectOfType<UIManager>().ShowSecret();
+        
+        base.Pick();
     }
 }
