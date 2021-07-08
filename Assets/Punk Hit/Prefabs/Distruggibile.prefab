@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d878ff26d2bdf4db967b1207e0fdee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VFX: {fileID: 583483976127380302, guid: 9bb251eb8ccb24948a72fa8f383e94a3, type: 3}
-  impactArea: {fileID: 7802824302690062496}
+  VFX: {fileID: 0}
+  impactArea: {fileID: 0}
   delayTime: 0.5
   impactDuration: 0.1
 --- !u!1 &4541571475142987533
