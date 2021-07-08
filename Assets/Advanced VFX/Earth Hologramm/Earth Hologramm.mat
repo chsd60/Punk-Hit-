@@ -82,7 +82,7 @@ Material:
     m_Ints: []
     m_Floats:
     - Edge_Size: 1.05
-    - Inner_Size: 0.34
+    - Inner_Size: 0
     - ScrollSpeed: 0.5
     - _AlphaClip: 0
     - _Blend: 0
