@@ -94,6 +94,6 @@ public class UIManager : MonoBehaviour {
     public void ShowSecret()
     {
         if(secretUI != null)
-            secretUI.gameObject.SetActive(true);
+            secretUI.color = Color.white;
     }
 }
