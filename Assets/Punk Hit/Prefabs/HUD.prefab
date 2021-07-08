@@ -2859,6 +2859,7 @@ MonoBehaviour:
   puntiUI: {fileID: 8982139769324511284}
   noteUI: {fileID: 8982139769435520215}
   guitarUI: {fileID: 6064748301606679199}
+  secretUI: {fileID: 5568026201849465464}
   guitarM: {fileID: 21300000, guid: 120cba477fe68e04bb6ab8f76208bbc7, type: 3}
   guitarH: {fileID: 21300000, guid: 5691354a6ca98e74b9fcdcf37e51f9a9, type: 3}
   guitarL: {fileID: 21300000, guid: c6cea10a43c69424b8cc3abba7685ee0, type: 3}
