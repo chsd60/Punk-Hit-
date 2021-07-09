@@ -6,6 +6,6 @@ public class InteractiveMember : InteractiveActivate {
 
     protected override void Interact() {
         base.Interact();
-        Time.timeScale = 0;
+//        Time.timeScale = 0;
     }
 }
