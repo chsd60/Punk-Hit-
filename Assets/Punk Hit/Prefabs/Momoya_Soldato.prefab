@@ -220,8 +220,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToRespawn: 0
-  sfxMorte: {fileID: 0}
-  vfxMorte: {fileID: 0}
 --- !u!65 &6774820810298114737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -278,7 +276,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
